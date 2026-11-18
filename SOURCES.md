@@ -62,6 +62,24 @@ Boards: oraksil.cc, freebene.com, uami6.net, linfree.net, todaycp.com, gamezone.
 | gamezone howto “몬스터에 대해서” ([301823](http://gamezone.live/board_JggX25/301823)) | PS-dev board **403** without membership |
 | Official Sense posts (Nageling / S-solo / tip 7056) | Modern or quick-dungeon — already rejected for classic habitat EXP |
 
+### Korean archive pass for a classic Sense dump
+
+Searched official board posts, Namu/DC/thewiki, Naver blogs, and Wayback CDX for a table that pairs classic habitat names (그림록, 데스나이트, 드라코, 에리얼, 크라켄, 적룡굴) with fixed HP and EXP. Nothing like that is public.
+
+| Find | What it actually is |
+|---|---|
+| [7056](https://lod.nexon.com/board/1493172227/7056) (2019, from Naver cafe 성천직자의 어둠의전설) | Quick-dungeon brackets. Classic names appear (그림록 at 4서클 level 85) but EXP is “필경의 13%” or the same million-scale bracket as every other dungeon. Not habitat HP. |
+| [7581](https://lod.nexon.com/Community/game/7581) (2023-12-12) | S-solo 15–20단. EXP 23.5M–56.6M and ability, not habitat HP. |
+| [7822](https://lod.nexon.com/Community/game/7822) (2025-12-13) | Nageling tower Sense. EXP in the billions. |
+| [1712](https://lod.nexon.com/community/game/1712) (2006 thief guide) | Sense shows name and EXP at low skill, then HP, attack element, and defense element (skill 91). No numeric dump. |
+| [964](https://lod.nexon.com/board/1493172227/964) | 지하수로 defense-element order by circle (슬라임 수, 프로그 토, …). No HP or EXP. |
+| [3449](https://lod.nexon.com/board/1493172227/3449) (2008-01-14) | Boss names only: 포테의정령, 해안의광폭자, 해안의폭군. |
+| [4550](https://lod.nexon.com/board/1493172227/4550) / [4505](https://lod.nexon.com/board/1493172227/4505) (2009) | 구피 quest. Says 체력의오크 has more HP than 오크전사. No numbers. |
+| Namu, DC wiki, thewiki, Naver “순수도적 육성” | How Sense works, or character HP. No per-monster table. |
+| Wayback CDX for `list.asp` and Inven/cafe URLs | No extra official list categories, and no archived copy of the board posts above. |
+
+Those posts were not imported. Blank HP/EXP stays blank.
+
 No open GitHub/KR LoD emulator repo with compiled habitat monster EXP (적룡굴, 죽음의마을, etc.) has surfaced.
 
 **Still best path for classic EXP:** in-game Sense on a 1×/본섭-balance KR server (e.g. Legacy), 2005 guidebook Ch.5 scans, or a leaked classic pack monster table (not player `experience` curves).
