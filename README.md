@@ -1,23 +1,18 @@
 # LoD Bestiary Recovery
 
-Recovered **Legend of Darkness (어둠의전설)** bestiary data from Wayback Machine archives:
+Recovered **Legend of Darkness (어둠의전설)** bestiary for **GitHub Pages only**.
 
-- Name / location / level / description (lod-mind, 2003)
-- HP ranges (darkstory.net, 2002–2003)
-- Quick-dungeon EXP brackets (Nexon tip board)
-- 54 monster sprites (darkstory.net GIFs still in Wayback)
+Do **not** import this repository into Vercel (or Netlify, etc.). It is a static archive site meant to be served from GitHub Pages.
 
-## Live site
+## Enable GitHub Pages
 
-Open `index.html` (or the GitHub Pages URL for this repo).
+1. Repo must be **public** (or use GitHub Pro for private Pages).
+2. Settings → Pages → Build and deployment → Source: **Deploy from a branch**
+3. Branch: `main` / folder: `/ (root)`
+4. Site URL: `https://<user>.github.io/lod-bestiary/`
 
-## Files
+## Contents
 
-- `index.html` / `app.js` / `styles.css` / `data.js` — browseable site
-- `images/` — recovered sprite GIFs
-- `lod_bestiary_final.csv` / `.json` — full table
-- `SOURCES.md` — provenance links
-
-## Note
-
-Wayback lod-mind HTML is EUC-KR without a charset header and looks like gibberish in modern browsers. The Habitat tab uses UTF-8-decoded tables.
+- Bilingual EN/KO monster browser
+- Habitat tables, HP, EXP, sprites
+- `lod_bestiary_final.csv` / `.json`
