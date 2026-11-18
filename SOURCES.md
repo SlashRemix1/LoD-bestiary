@@ -16,7 +16,7 @@ The dungeon pages (for example `http://lod.nexon.com/game_info/dungeon/dungeon9.
 
 | Category | Area | Pages saved |
 |---|---|---|
-| 1 | 우드랜드 | 1–2 |
+| 1 | 우드랜드 | 1–2. Page 2 also lists 완두콩 and 브라운 맨티스 (stats marked ? ) and 녹색말벌 at HP 1200, EXP 4500. |
 | 2 | 지하묘지 | 1 (later pages were not captured) |
 | 4 | 포테의숲 | 1 |
 | 8 | 죽음의마을 | 1 |
@@ -25,7 +25,7 @@ Columns are level, **HP (A)**, **EXP (B)**, description. For a monster on these 
 
 Monsters outside those captured pages keep the lod-mind name, place, level, and description. Their HP and EXP are blank.
 
-Dungeon shells `dungeon1.asp`–`dungeon9.asp` (Wayback 2020–2025) are saved under `sources/official-iframes/dungeons/`. Their area text is on the Habitat tab. Monster tables for 서아벨 해안, 서뤼케시온 해안, 호러캐슬, 오피온 동굴, 노에스엔도르탑, 지하수로, and the other dungeon9 categories were **not** captured.
+Dungeon shells `dungeon1.asp`–`dungeon9.asp` (Wayback 2020–2025) are saved under `sources/official-iframes/dungeons/`. Their area text is on the Habitat tab. A second Wayback pass (CDX through 2024) still has no monster-list capture for any category except 1, 2, 4, and 8, and no page 3. Monster tables for 서아벨 해안, 서뤼케시온 해안, 호러캐슬, 오피온 동굴, 노에스엔도르탑, 지하수로, the mine, and the other dungeon9 categories were **not** captured. No public Korean monster table with HP/EXP for those areas turned up outside the rejected Dark Ages, quick-dungeon, and darkstory sets.
 
 Rejected sources:
 
