@@ -9,7 +9,7 @@ Live: https://slashremix1.github.io/LoD-bestiary/
 ## Contents
 
 - Bilingual EN/KO monster browser (habitat, HP, sprites)
-- **EXP** from Dark Ages Library classic solo-max tables (English LoD), habitat-matched — not quick-dungeon
+- **EXP** left blank until a verified **KR LoD** Sense / classic source is found (quick-dungeon and Dark Ages rejected)
 - `lod_bestiary_final.csv` / `.json`
 - `SOURCES.md` — provenance and caveats
 
