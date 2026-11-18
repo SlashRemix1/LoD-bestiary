@@ -15,7 +15,7 @@
     "location_en": "Woodland",
     "description_en": "The lowest-tier monster of the Woodland.",
     "hp_en": "35–45",
-    "exp_en": "Quick Dungeon Woodland: 2Circle(11~20) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Woodland: 2 Circle(11~20) → EXP of max HP × 13%"
   },
   {
     "name": "홍사",
@@ -105,7 +105,7 @@
     "location_en": "Woodland",
     "description_en": "A terrifying mantis that strikes with its forelegs and casts magic from range. It charges as soon as it sees a person.",
     "hp_en": "170–2000",
-    "exp_en": "Quick Dungeon Woodland: 5Circle(99) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Woodland: 5 Circle(99) → EXP of max HP × 13%"
   },
   {
     "name": "브라운맨티스",
@@ -141,7 +141,7 @@
     "location_en": "Woodland",
     "description_en": "Shoots poison when approached and can also use magic—approach with care.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon Woodland: 4Circle(85) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Woodland: 4 Circle(85) → EXP of max HP × 13%"
   },
   {
     "name": "말벌",
@@ -159,7 +159,7 @@
     "location_en": "Woodland",
     "description_en": "An upgraded hornet beyond the green hornet; its attack power is even more fearsome.",
     "hp_en": "130–1000",
-    "exp_en": "Quick Dungeon Woodland: 4Circle(71~84, 86~98) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Woodland: 4 Circle(71~84, 86~98) → EXP of max HP × 13%"
   },
   {
     "name": "늑대",
@@ -339,7 +339,7 @@
     "location_en": "Underground Dungeon",
     "description_en": "A low-tier monster.",
     "hp_en": "150000–220000",
-    "exp_en": "Quick Dungeon Underground Ruins: 4Circle(71~84, 86~98) → EXP of max HP 13% | Quick Dungeon Underground Ruins: 480000–580000 → EXP 47,793,893"
+    "exp_en": "Quick Dungeon Underground Ruins: 4 Circle(71~84, 86~98) → EXP of max HP × 13% | Quick Dungeon Underground Ruins: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "드렌스부",
@@ -411,7 +411,7 @@
     "location_en": "Underground Dungeon",
     "description_en": "A grown form of the centipede.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon Underground Ruins: 3Circle(55~70) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Underground Ruins: 3 Circle(55~70) → EXP of max HP × 13%"
   },
   {
     "name": "박쥐",
@@ -555,7 +555,7 @@
     "location_en": "Underground Dungeon",
     "description_en": "A red scorpion of the mid crypt layers. Strong magic; hides behind walls to attack.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon Underground Ruins: 4Circle(85) → EXP of max HP 13% | Quick Dungeon Underground Ruins: 5Circle(99) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Underground Ruins: 4 Circle(85) → EXP of max HP × 13% | Quick Dungeon Underground Ruins: 5 Circle(99) → EXP of max HP × 13%"
   },
   {
     "name": "지네",
@@ -573,7 +573,7 @@
     "location_en": "Underground Dungeon",
     "description_en": "A poisonous centipede.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon Underground Ruins: 3Circle(55~70) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Underground Ruins: 3 Circle(55~70) → EXP of max HP × 13%"
   },
   {
     "name": "카디",
@@ -789,7 +789,7 @@
     "location_en": "Suomi Dungeon / Forte Forest",
     "description_en": "A giant mantis that rules Forte Forest. There is a bounty on it; you must take the forest trail to hunt it.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon Woodland: 5Circle(99) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Woodland: 5 Circle(99) → EXP of max HP × 13%"
   },
   {
     "name": "트렌트",
@@ -987,7 +987,7 @@
     "location_en": "Piet Dungeon",
     "description_en": "An eel-like monster that attacks with the horn on its head.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon 해저: 480000–580000 → EXP 47,793,893 | Quick Dungeon Mine: 2Circle(11~20) → EXP of max HP 13% | Quick Dungeon Mine: 2Circle(21~40) → EXP of max HP 13% | Quick Dungeon Mine: 3Circle(41~54) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon 해저: 480000–580000 → EXP 47,793,893 | Quick Dungeon Mine: 2 Circle(11~20) → EXP of max HP × 13% | Quick Dungeon Mine: 2 Circle(21~40) → EXP of max HP × 13% | Quick Dungeon Mine: 3 Circle(41~54) → EXP of max HP × 13%"
   },
   {
     "name": "촌촌",
@@ -1293,7 +1293,7 @@
     "location_en": "Coastal Dungeon",
     "description_en": "Boss of the West Abel coast. Empty-headed but fierce in attack.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon 해저: 4Circle(85) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon 해저: 4 Circle(85) → EXP of max HP × 13%"
   },
   {
     "name": "포이즌카카포",
@@ -1329,7 +1329,7 @@
     "location_en": "Coastal Dungeon",
     "description_en": "An octopus-like monster that eats seaweed and wraps itself in it for camouflage—though it is not very effective.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon 해저: 4Circle(85) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon 해저: 4 Circle(85) → EXP of max HP × 13%"
   },
   {
     "name": "그림록",
@@ -1347,7 +1347,7 @@
     "location_en": "Mine",
     "description_en": "A low-tier Mine monster. Attacks with a stone axe; no magic.",
     "hp_en": "60000–80000",
-    "exp_en": "Quick Dungeon Mine: 4Circle(85) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Mine: 4 Circle(85) → EXP of max HP × 13%"
   },
   {
     "name": "그림록근위병",
@@ -1383,7 +1383,7 @@
     "location_en": "Mine",
     "description_en": "Grimlock soldier / low-tier Mine monster. Attacks with a small knife; no magic.",
     "hp_en": "150000+",
-    "exp_en": "Quick Dungeon Mine: 5Circle(99) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Mine: 5 Circle(99) → EXP of max HP × 13%"
   },
   {
     "name": "그림록퀸",
@@ -1401,7 +1401,7 @@
     "location_en": "Mine",
     "description_en": "Queen of the Grimlocks, found on the lowest Mine floors. Uses magic and double-wield attacks; may drop a Grimlock Queen circlet.",
     "hp_en": "200000–350000",
-    "exp_en": "Quick Dungeon Mine: 4Circle(85) → EXP of max HP 13% | Quick Dungeon Mine: 950000–1000000 → EXP 100,022,994"
+    "exp_en": "Quick Dungeon Mine: 4 Circle(85) → EXP of max HP × 13% | Quick Dungeon Mine: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "도둑산타",
@@ -1689,7 +1689,7 @@
     "location_en": "Dead Village",
     "description_en": "A low-tier monster.",
     "hp_en": "150000–220000",
-    "exp_en": "Quick Dungeon Underground Ruins: 4Circle(71~84, 86~98) → EXP of max HP 13% | Quick Dungeon Underground Ruins: 480000–580000 → EXP 47,793,893"
+    "exp_en": "Quick Dungeon Underground Ruins: 4 Circle(71~84, 86~98) → EXP of max HP × 13% | Quick Dungeon Underground Ruins: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "듈라한",
@@ -1995,7 +1995,7 @@
     "location_en": "Dead Village",
     "description_en": "A centipede of bone with a human-like face.",
     "hp_en": "",
-    "exp_en": "Quick Dungeon Underground Ruins: 3Circle(55~70) → EXP of max HP 13%"
+    "exp_en": "Quick Dungeon Underground Ruins: 3 Circle(55~70) → EXP of max HP × 13%"
   },
   {
     "name": "다크틸",
