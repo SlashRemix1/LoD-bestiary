@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LoD Bestiary Recovery — 어둠의전설</title>
+  <meta name="description" content="Recovered Legend of Darkness bestiary: habitat, HP, EXP, and sprites from Wayback archives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="brand">어둠의전설 · Legend of Darkness</p>
+    <h1>Recovered Bestiary</h1>
+    <p class="lede">
+      Habitat, HP ranges, quick-dungeon EXP brackets, and archived sprites
+      recovered from 2002–2003 fan sites via the Internet Archive.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#bestiary">Browse monsters</a>
+      <a class="btn" href="#sources">Sources</a>
+      <a class="btn" href="lod_bestiary_final.csv">Download CSV</a>
+    </div>
+  </header>
+
+  <section class="stats" id="stats" aria-label="Coverage"></section>
+
+  <nav class="tabs" aria-label="Sections">
+    <button type="button" class="tab active" data-panel="bestiary">Bestiary</button>
+    <button type="button" class="tab" data-panel="habitat">Habitat lists</button>
+    <button type="button" class="tab" data-panel="sprites">Sprites</button>
+    <button type="button" class="tab" data-panel="sources">Sources</button>
+  </nav>
+
+  <main>
+    <section id="panel-bestiary" class="panel active">
+      <div class="toolbar">
+        <label class="search">
+          <span>Search</span>
+          <input id="q" type="search" placeholder="Name, location, HP…" autocomplete="off" />
+        </label>
+        <label>
+          <span>Location</span>
+          <select id="loc"></select>
+        </label>
+        <label>
+          <span>Filter</span>
+          <select id="filt">
+            <option value="all">All</option>
+            <option value="hp">Has HP</option>
+            <option value="exp">Has EXP</option>
+            <option value="both">HP + EXP</option>
+            <option value="image">Has image</option>
+          </select>
+        </label>
+        <p class="count" id="count"></p>
+      </div>
+      <div id="bestiary" class="grid"></div>
+    </section>
+
+    <section id="panel-habitat" class="panel">
+      <div class="toolbar">
+        <div id="habitat-tabs" class="pill-row"></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>몬스터</th><th>특징</th><th>레벨</th></tr>
+          </thead>
+          <tbody id="habitat-body"></tbody>
+        </table>
+      </div>
+      <p class="fine">Decoded UTF-8 from lod-mind EUC-KR pages (Wayback 2003). Raw archive links often look like gibberish in modern browsers.</p>
+    </section>
+
+    <section id="panel-sprites" class="panel">
+      <p class="fine">54 GIFs archived under darkstory.net/Monster/* — HTML pages cited ~157 sprites; the rest were never captured.</p>
+      <div id="sprites" class="sprite-grid"></div>
+    </section>
+
+    <section id="panel-sources" class="panel">
+      <article class="source-card">
+        <h2>Name / location / level</h2>
+        <p>lod-mind fan site → <code>home.megapass.co.kr/~dungeons/lod/*</code> via Wayback (2003). Use the Habitat lists tab for readable UTF-8 tables.</p>
+      </article>
+      <article class="source-card">
+        <h2>HP (체력)</h2>
+        <p>darkstory.net Monster pages via Wayback (Dec 2002–Jan 2003).</p>
+        <p><a href="https://web.archive.org/web/20021217010147/http://darkstory.net/monster.html" target="_blank" rel="noopener">Wayback monster index</a></p>
+      </article>
+      <article class="source-card">
+        <h2>EXP</h2>
+        <p>Modern Nexon tip board — bracket-scaled quick-dungeon EXP, not classic fixed values.</p>
+        <p><a href="https://lod.nexon.com/board/1493172227/7056" target="_blank" rel="noopener">lod.nexon.com tip post 7056</a></p>
+      </article>
+      <article class="source-card">
+        <h2>Sprites</h2>
+        <p>darkstory.net <code>/Monster/*/*.gif</code> via Wayback CDX. 54 unique GIFs recovered and linked by name where possible.</p>
+      </article>
+      <p class="fine">Downloads: <a href="lod_bestiary_final.csv">CSV</a> · <a href="lod_bestiary_final.json">JSON</a> · <a href="SOURCES.md">SOURCES.md</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Archival recovery for personal reference. Data merged from multiple historical sources; gaps remain (AC, many HP/EXP/image rows).</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
