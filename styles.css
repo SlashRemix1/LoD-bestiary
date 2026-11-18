@@ -63,11 +63,25 @@ body {
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
+.h1-ko {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-body);
+  font-size: 0.38em;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0;
+}
 .lede {
-  max-width: 38rem;
+  max-width: 40rem;
   margin: 14px 0 0;
   color: var(--muted);
   font-size: 1.05rem;
+}
+.ko-lede {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #9a8670;
 }
 .hero-actions {
   display: flex;
@@ -224,16 +238,40 @@ main {
   margin: 0 0 2px;
   font-size: 1.05rem;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
-.meta { color: var(--muted); font-size: 0.82rem; margin-bottom: 6px; }
+.en { display: block; }
+.ko {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.86em;
+}
+h3 .ko { font-size: 0.82em; }
+.meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+.meta .en, .meta .ko { display: inline; }
+.meta .ko::before { content: " · "; color: #6d5c49; }
 .desc {
   margin: 0 0 8px;
   font-size: 0.88rem;
   color: #e4d3bc;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+}
+.desc .ko {
+  margin-top: 4px;
+  font-size: 0.84em;
+}
+.exp-line .en, .exp-line .ko { display: block; }
+.exp-line .ko { margin-top: 2px; }
+.chip-ko {
+  opacity: 0.75;
+  margin-left: 4px;
+  font-weight: 400;
 }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
@@ -284,6 +322,8 @@ th {
   font-weight: 600;
 }
 td:last-child, th:last-child { white-space: nowrap; }
+td .en { display: block; color: var(--ink); }
+td .ko { display: block; margin-top: 3px; }
 
 .sprite-grid {
   display: grid;

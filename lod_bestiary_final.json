@@ -10,7 +10,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Snake",
+    "location_en": "Woodland",
+    "description_en": "The lowest-tier monster of the Woodland.",
+    "hp_en": "35–45",
+    "exp_en": "Quick Dungeon Woodland: 2Circle(11~20) → EXP of max HP 13%"
   },
   {
     "name": "홍사",
@@ -23,7 +28,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Red Snake",
+    "location_en": "Woodland",
+    "description_en": "A snake that attacks by spitting red poison. Easy for beginners to hunt.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "황사",
@@ -36,7 +46,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Yellow Snake",
+    "location_en": "Woodland",
+    "description_en": "A snake that attacks by spitting yellow poison. Easy for beginners to hunt.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "백사",
@@ -49,7 +64,12 @@
     "image": "images/우드랜드__백사.gif",
     "image_url": "https://web.archive.org/web/20021217054035id_/http://darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%B9%E9%BB%E7.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "White Snake",
+    "location_en": "Woodland",
+    "description_en": "A snake that attacks by spitting white poison. Easy for beginners to hunt.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "팜팻",
@@ -62,7 +82,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Pampat",
+    "location_en": "Woodland",
+    "description_en": "Uses a fearsome windmill spin attack. Can also eat grass on the ground to recover HP.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "맨티스",
@@ -75,7 +100,12 @@
     "image": "images/우드랜드__맨티스.gif",
     "image_url": "https://web.archive.org/web/20021217071037id_/http://darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%B8%C7%C6%BC%BD%BA.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Mantis",
+    "location_en": "Woodland",
+    "description_en": "A terrifying mantis that strikes with its forelegs and casts magic from range. It charges as soon as it sees a person.",
+    "hp_en": "170–2000",
+    "exp_en": "Quick Dungeon Woodland: 5Circle(99) → EXP of max HP 13%"
   },
   {
     "name": "브라운맨티스",
@@ -88,7 +118,12 @@
     "image": "images/우드랜드__브라운맨티스.gif",
     "image_url": "https://web.archive.org/web/20021217055550id_/http://darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%BA%EA%B6%F3%BF%EE%B8%C7%C6%BC%BD%BA.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Brown Mantis",
+    "location_en": "Woodland",
+    "description_en": "An upgraded form of the mantis with even more fearsome attack power.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: under 40000 → EXP 5,526,280"
   },
   {
     "name": "녹색말벌",
@@ -101,7 +136,12 @@
     "image": "images/우드랜드__녹색말벌.gif",
     "image_url": "https://web.archive.org/web/20021217065051id_/http://darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%B3%EC%BB%F6%B8%BB%B9%FA.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Green Hornet",
+    "location_en": "Woodland",
+    "description_en": "Shoots poison when approached and can also use magic—approach with care.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: 4Circle(85) → EXP of max HP 13%"
   },
   {
     "name": "말벌",
@@ -114,7 +154,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hornet",
+    "location_en": "Woodland",
+    "description_en": "An upgraded hornet beyond the green hornet; its attack power is even more fearsome.",
+    "hp_en": "130–1000",
+    "exp_en": "Quick Dungeon Woodland: 4Circle(71~84, 86~98) → EXP of max HP 13%"
   },
   {
     "name": "늑대",
@@ -127,7 +172,12 @@
     "image": "images/우드랜드__늑대.gif",
     "image_url": "https://web.archive.org/web/20040407102004id_/http://www.darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%B4%C1%B4%EB.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Wolf",
+    "location_en": "Woodland",
+    "description_en": "Agile, with bite and magic attacks—be careful.",
+    "hp_en": "1100–3000",
+    "exp_en": "Quick Dungeon Woodland: 40000–90000 → EXP 5,459,967"
   },
   {
     "name": "늑대인간",
@@ -140,7 +190,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Werewolf",
+    "location_en": "Woodland",
+    "description_en": "A Woodland wolf that transformed into human form, with greater speed and power than a wolf.",
+    "hp_en": "3000–6000",
+    "exp_en": "Quick Dungeon Woodland: 150000–220000 → EXP 9,125,948"
   },
   {
     "name": "고블린병사",
@@ -153,7 +208,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Goblin Soldier",
+    "location_en": "Woodland",
+    "description_en": "Attacks intruders in goblin territory. Only sturdy goblins become soldiers; they show strong skills and magic.",
+    "hp_en": "5000–10000",
+    "exp_en": "Quick Dungeon Woodland: 820000–950000 → EXP 86,125,078"
   },
   {
     "name": "고블린전사",
@@ -166,7 +226,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Goblin Warrior",
+    "location_en": "Woodland",
+    "description_en": "Warriors of the goblin lands seeking fame. Strong skills and magic attacks.",
+    "hp_en": "9000–14000",
+    "exp_en": "Quick Dungeon Woodland: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "고블린가드",
@@ -179,7 +244,12 @@
     "image": "images/우드랜드__고블린가드.gif",
     "image_url": "https://web.archive.org/web/20021217063400id_/http://darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%B0%ED%BA%ED%B8%B0%B0%A1%B5%E5.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Goblin Guard",
+    "location_en": "Woodland",
+    "description_en": "Defenders who keep outsiders out of goblin territory. Strong skills and magic attacks.",
+    "hp_en": "21000–33000",
+    "exp_en": "Quick Dungeon Woodland: 950000–1000000 → EXP 100,022,994 | Quick Dungeon Mine: 580000–700000 → EXP 54,198,047"
   },
   {
     "name": "홉고블린",
@@ -192,7 +262,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hobgoblin",
+    "location_en": "Woodland",
+    "description_en": "An elite unit selected from the warriors who guard the goblin holy ground. Strong skills and magic.",
+    "hp_en": "30000–40000",
+    "exp_en": "Quick Dungeon Woodland: 820000–950000 → EXP 86,125,078"
   },
   {
     "name": "슈리커",
@@ -205,7 +280,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Shrieker",
+    "location_en": "Woodland",
+    "description_en": "Attacks by spraying poison from under its mushroom head. The poison is very strong—always be careful.",
+    "hp_en": "40000–60000",
+    "exp_en": "Quick Dungeon Woodland: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "위스프",
@@ -218,7 +298,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Wisp",
+    "location_en": "Woodland",
+    "description_en": "A wisp that guards the holy ground. Its glowing attacks can blind you.",
+    "hp_en": "50000–70000",
+    "exp_en": "Quick Dungeon Woodland: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "에인트",
@@ -231,20 +316,30 @@
     "image": "images/우드랜드__에인트.gif",
     "image_url": "https://web.archive.org/web/20021217060206id_/http://darkstory.net:80/Monster/%BF%EC%B5%E5%B7%A3%B5%E5/%BF%A1%C0%CE%C6%AE.gif",
     "source_file": "dungeon.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Ent",
+    "location_en": "Woodland",
+    "description_en": "An Ent skilled in magic who guards the Woodland. Extremely dangerous—take great care.",
+    "hp_en": "50000–75000",
+    "exp_en": "Quick Dungeon Woodland: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "독거미",
     "location": "지하던전",
     "level": "3~17",
     "description": "하급몬스터,",
-    "hp": "",
+    "hp": "15~22만",
     "exp": "퀵던전 지하유적: 4서클(71~84, 86~98) → EXP 필경의 13% | 퀵던전 지하유적: 48만~58만 → EXP 47,793,893",
     "ac": "",
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Poison Spider",
+    "location_en": "Underground Dungeon",
+    "description_en": "A low-tier monster.",
+    "hp_en": "150000–220000",
+    "exp_en": "Quick Dungeon Underground Ruins: 4Circle(71~84, 86~98) → EXP of max HP 13% | Quick Dungeon Underground Ruins: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "드렌스부",
@@ -257,7 +352,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Transparent Cloth Ghost",
+    "location_en": "Underground Dungeon",
+    "description_en": "A transparent cloth ghost.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "멜로더",
@@ -270,7 +370,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Meloder",
+    "location_en": "Underground Dungeon",
+    "description_en": "A monster that attacks with spines.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 150000–220000 → EXP 9,125,948"
   },
   {
     "name": "미믹",
@@ -283,7 +388,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Mimic",
+    "location_en": "Underground Dungeon",
+    "description_en": "Looks like a treasure chest but is a monster that attacks people who approach for loot.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 90000–150000 → EXP 6,941,961"
   },
   {
     "name": "바사크지네",
@@ -296,7 +406,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Basak Centipede",
+    "location_en": "Underground Dungeon",
+    "description_en": "A grown form of the centipede.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 3Circle(55~70) → EXP of max HP 13%"
   },
   {
     "name": "박쥐",
@@ -309,7 +424,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Bat",
+    "location_en": "Underground Dungeon",
+    "description_en": "A large bat.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 90000–150000 → EXP 6,941,961"
   },
   {
     "name": "베리얼",
@@ -322,7 +442,12 @@
     "image": "images/지하던젼__베리얼.gif",
     "image_url": "https://web.archive.org/web/20030510023015id_/http://www.darkstory.net:80/Monster/%C1%F6%C7%CF%B4%F8%C1%AF/%BA%A3%B8%AE%BE%F3.gif",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Berial",
+    "location_en": "Underground Dungeon",
+    "description_en": "Sister of the succubus; a monster that bewitches people.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "부",
@@ -335,7 +460,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Cloth Ghost",
+    "location_en": "Underground Dungeon",
+    "description_en": "A cloth ghost that loves startling people.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "블랙스콜피온",
@@ -348,7 +478,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Black Scorpion",
+    "location_en": "Underground Dungeon",
+    "description_en": "A black scorpion that carries poison.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "생쥐",
@@ -361,7 +496,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Mouse",
+    "location_en": "Underground Dungeon",
+    "description_en": "An ordinary mouse that wanders the underground crypt; little threat.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "써큐버스",
@@ -374,7 +514,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Succubus",
+    "location_en": "Underground Dungeon",
+    "description_en": "A female monster that sometimes appears in town and seduces men. Her hair becomes a symbol of valor.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "작은박쥐",
@@ -387,7 +532,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Small Bat",
+    "location_en": "Underground Dungeon",
+    "description_en": "A small bat; hard to see in the dark.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 40000–90000 → EXP 5,459,967"
   },
   {
     "name": "전갈",
@@ -400,7 +550,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Scorpion",
+    "location_en": "Underground Dungeon",
+    "description_en": "A red scorpion of the mid crypt layers. Strong magic; hides behind walls to attack.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 4Circle(85) → EXP of max HP 13% | Quick Dungeon Underground Ruins: 5Circle(99) → EXP of max HP 13%"
   },
   {
     "name": "지네",
@@ -413,7 +568,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Centipede",
+    "location_en": "Underground Dungeon",
+    "description_en": "A poisonous centipede.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 3Circle(55~70) → EXP of max HP 13%"
   },
   {
     "name": "카디",
@@ -426,7 +586,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Cady",
+    "location_en": "Underground Dungeon",
+    "description_en": "A cute mammal of the lower crypt; once a pet, now aggressive after being abandoned.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 150000–220000 → EXP 9,125,948"
   },
   {
     "name": "흰박쥐",
@@ -439,7 +604,12 @@
     "image": "",
     "image_url": "",
     "source_file": "bbb-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "White Bat",
+    "location_en": "Underground Dungeon",
+    "description_en": "A white bat that uses high-level magic.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: under 40000 → EXP 5,526,280"
   },
   {
     "name": "그린팜팻",
@@ -452,7 +622,12 @@
     "image": "images/포테의숲__그린팜팻.gif",
     "image_url": "https://web.archive.org/web/20021217054651id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%B1%D7%B8%B0%C6%CA%C6%D6.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Green Pampat",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A green Pampat near the entrance of Suomi’s Forte Forest. Herbivore, but may attack if disturbed while eating.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "놀",
@@ -465,7 +640,12 @@
     "image": "",
     "image_url": "",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Gnoll",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "An evolved Woodland werewolf. Fast and can use magic.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "라이칸스로프",
@@ -478,7 +658,12 @@
     "image": "images/포테의숲__라이칸스로프.gif",
     "image_url": "https://web.archive.org/web/20021217055219id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%B6%F3%C0%CC%C4%AD%BD%BA%B7%CE%C7%C1.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Lycanthrope",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A silver werewolf of Forte Forest given intelligence by special magic. Ferocious.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "레드팜팻",
@@ -491,7 +676,12 @@
     "image": "",
     "image_url": "",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Red Pampat",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A red Pampat near the Forte Forest entrance. Herbivore, but may attack if disturbed while eating.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: 1000000+ → EXP 105,470,586 | Quick Dungeon Mine: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "실버팜팻",
@@ -504,7 +694,12 @@
     "image": "images/포테의숲__실버팜팻.gif",
     "image_url": "https://web.archive.org/web/20021217060519id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%BD%C7%B9%F6%C6%CA%C6%D6.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Silver Pampat",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A white Pampat near the Forte Forest entrance. Herbivore, but may attack if disturbed while eating.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "앤트라이온",
@@ -517,7 +712,12 @@
     "image": "",
     "image_url": "",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Antlion",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A giant ant; its bite can poison. Stores special sand and spews it when attacking.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "앤트자이언트",
@@ -530,7 +730,12 @@
     "image": "images/포테의숲__엔트자이언트.gif",
     "image_url": "https://web.archive.org/web/20021217062343id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%BF%A3%C6%AE%C0%DA%C0%CC%BE%F0%C6%AE.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Giant Ant",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A giant red ant that fiercely defends its territory. Its wings lift it slightly and can help avoid traps.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "울프라이더",
@@ -543,7 +748,12 @@
     "image": "images/포테의숲__울프라이더.gif",
     "image_url": "https://web.archive.org/web/20021217063152id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%BF%EF%C7%C1%B6%F3%C0%CC%B4%F5.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Wolf Rider",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "An evolved werewolf that likes to roam Forte Forest.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "은빛늑대",
@@ -556,7 +766,12 @@
     "image": "",
     "image_url": "",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Silver Wolf",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A Woodland wolf evolved by special magic. Its mane can sell for a high price.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: 90000–150000 → EXP 6,941,961"
   },
   {
     "name": "자이언트맨티스",
@@ -569,7 +784,12 @@
     "image": "",
     "image_url": "",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Giant Mantis",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A giant mantis that rules Forte Forest. There is a bounty on it; you must take the forest trail to hunt it.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: 5Circle(99) → EXP of max HP 13%"
   },
   {
     "name": "트렌트",
@@ -582,7 +802,12 @@
     "image": "images/포테의숲__트랜트.gif",
     "image_url": "https://web.archive.org/web/20021217065505id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%C6%AE%B7%A3%C6%AE.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Treant",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "An old cursed rotting tree. Its fruit is said to be poisonous.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: 480000–580000 → EXP 47,793,893 | Quick Dungeon Woodland: 580000–700000 → EXP 54,198,047"
   },
   {
     "name": "퍼플팜팻",
@@ -595,7 +820,12 @@
     "image": "images/포테의숲__퍼플팜팻.gif",
     "image_url": "https://web.archive.org/web/20021217065641id_/http://darkstory.net:80/Monster/%C6%F7%C5%D7%C0%C7%BD%A3/%C6%DB%C7%C3%C6%CA%C6%D6.gif",
     "source_file": "su-o-mi-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Purple Pampat",
+    "location_en": "Suomi Dungeon / Forte Forest",
+    "description_en": "A purple Pampat near the Forte Forest entrance. Herbivore, but may attack if disturbed while eating.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "그래브",
@@ -608,7 +838,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Crab",
+    "location_en": "Piet Dungeon",
+    "description_en": "A crab-shaped monster that walks sideways.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "그렘린",
@@ -621,7 +856,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Gremlin",
+    "location_en": "Piet Dungeon",
+    "description_en": "A humanoid lizard of the Piet underground. There is a bounty on it.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "드루이드",
@@ -634,7 +874,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Druid",
+    "location_en": "Piet Dungeon",
+    "description_en": "A magic monster exiled after failing Murekan’s orders; takes its anger out on humans.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "리치",
@@ -647,7 +892,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Leech",
+    "location_en": "Piet Dungeon",
+    "description_en": "A leech-type monster.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "말미잘",
@@ -660,7 +910,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Sea Anemone",
+    "location_en": "Piet Dungeon",
+    "description_en": "A sea anemone; also appears on the Abel coast.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "바크",
@@ -673,7 +928,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Bark",
+    "location_en": "Piet Dungeon",
+    "description_en": "An armored mole-like monster.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 290000–380000 → EXP 19,443,924"
   },
   {
     "name": "슬러그",
@@ -686,7 +946,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Slug",
+    "location_en": "Piet Dungeon",
+    "description_en": "A sticky mutant snail.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "오튜",
@@ -699,7 +964,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Otuy",
+    "location_en": "Piet Dungeon",
+    "description_en": "A misshapen monster with strong destructive power.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "일",
@@ -712,7 +982,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Eel",
+    "location_en": "Piet Dungeon",
+    "description_en": "An eel-like monster that attacks with the horn on its head.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 480000–580000 → EXP 47,793,893 | Quick Dungeon Mine: 2Circle(11~20) → EXP of max HP 13% | Quick Dungeon Mine: 2Circle(21~40) → EXP of max HP 13% | Quick Dungeon Mine: 3Circle(41~54) → EXP of max HP 13%"
   },
   {
     "name": "촌촌",
@@ -725,7 +1000,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Moth",
+    "location_en": "Piet Dungeon",
+    "description_en": "A moth-like monster with a human-like head that spits poison from its mouth.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "크라켄",
@@ -738,7 +1018,12 @@
     "image": "images/피에트__크라켄.gif",
     "image_url": "https://web.archive.org/web/20030205134730id_/http://darkstory.net:80/Monster/%C7%C7%BF%A1%C6%AE/%C5%A9%B6%F3%C4%CB.gif",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Kraken",
+    "location_en": "Piet Dungeon",
+    "description_en": "A squid monster that also appears on the coast.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "터틀",
@@ -751,7 +1036,12 @@
     "image": "",
     "image_url": "",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Turtle",
+    "location_en": "Piet Dungeon",
+    "description_en": "A turtle-shaped monster.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "프로그",
@@ -764,7 +1054,12 @@
     "image": "images/피에트__프로그.gif",
     "image_url": "https://web.archive.org/web/20030205140209id_/http://darkstory.net:80/Monster/%C7%C7%BF%A1%C6%AE/%C7%C1%B7%CE%B1%D7.gif",
     "source_file": "pi-e-t-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Frog",
+    "location_en": "Piet Dungeon",
+    "description_en": "A giant frog.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "가스",
@@ -777,7 +1072,12 @@
     "image": "",
     "image_url": "",
     "source_file": "abel-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Gas",
+    "location_en": "Abel Dungeon",
+    "description_en": "A monster that stores gas inside its body.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "드워프",
@@ -790,7 +1090,12 @@
     "image": "",
     "image_url": "",
     "source_file": "abel-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Dwarf",
+    "location_en": "Abel Dungeon",
+    "description_en": "A dwarf living under Abel.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Mine: 380000–480000 → EXP 21,896,946 | Quick Dungeon Mine: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "드워프병사",
@@ -803,7 +1108,12 @@
     "image": "",
     "image_url": "",
     "source_file": "abel-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Dwarf Soldier",
+    "location_en": "Abel Dungeon",
+    "description_en": "A dwarf soldier who attacks with an axe. There is a royal bounty on it.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Mine: 380000–480000 → EXP 21,896,946 | Quick Dungeon Mine: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "애스코모이드",
@@ -816,7 +1126,12 @@
     "image": "",
     "image_url": "",
     "source_file": "abel-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Ascomoid",
+    "location_en": "Abel Dungeon",
+    "description_en": "Egg-shaped with many holes; sprays spores from inside through the holes to attack.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "퐁퐁이",
@@ -829,7 +1144,12 @@
     "image": "",
     "image_url": "",
     "source_file": "abel-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Pongpong",
+    "location_en": "Abel Dungeon",
+    "description_en": "A slime made of magic mud. Cute-looking, but once your feet are stuck it is hard to escape.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "레드하콘",
@@ -842,7 +1162,12 @@
     "image": "",
     "image_url": "",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Red Hacon",
+    "location_en": "Coastal Dungeon",
+    "description_en": "A red starfish monster. Attacks by whipping with seaweed.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 90000–150000 → EXP 6,941,961"
   },
   {
     "name": "문어",
@@ -855,7 +1180,12 @@
     "image": "images/해안던젼__문어.gif",
     "image_url": "https://web.archive.org/web/20030205140945id_/http://darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%B9%AE%BE%EE.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Octopus",
+    "location_en": "Coastal Dungeon",
+    "description_en": "A red octopus that attacks with ink.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "블루하콘",
@@ -868,7 +1198,12 @@
     "image": "images/해안던젼__블루하콘.gif",
     "image_url": "https://web.archive.org/web/20021217071400id_/http://darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%BA%ED%B7%E7%C7%CF%C4%DC.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Blue Hacon",
+    "location_en": "Coastal Dungeon",
+    "description_en": "A blue starfish monster. Attacks by whipping with squid tentacles.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 150000–220000 → EXP 9,125,948"
   },
   {
     "name": "에리얼",
@@ -881,7 +1216,12 @@
     "image": "images/해안던젼__에리얼.gif",
     "image_url": "https://web.archive.org/web/20040406195740id_/http://www.darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%BF%A1%B8%AE%BE%F3.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Aerial",
+    "location_en": "Coastal Dungeon",
+    "description_en": "Boss that rules Lykesion. Loves pearls and schemes to monopolize every pearl in the world.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "일렉코아틀",
@@ -894,7 +1234,12 @@
     "image": "images/해안던젼__일렉코아틀.gif",
     "image_url": "https://web.archive.org/web/20030205142139id_/http://darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%C0%CF%B7%BA%C4%DA%BE%C6%C6%B2.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Electric Coatl",
+    "location_en": "Coastal Dungeon",
+    "description_en": "An electric ray. Responds to attacks with powerful electricity.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "카카포",
@@ -907,7 +1252,12 @@
     "image": "images/해안던젼__카카포.gif",
     "image_url": "https://web.archive.org/web/20030205143147id_/http://darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%C4%AB%C4%AB%C6%F7.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Kakapo",
+    "location_en": "Coastal Dungeon",
+    "description_en": "Attacks from inside a hard shell with tentacles.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 380000–480000 → EXP 21,896,946"
   },
   {
     "name": "코아틀",
@@ -920,7 +1270,12 @@
     "image": "images/해안던젼__코아틀.gif",
     "image_url": "https://web.archive.org/web/20040406213959id_/http://www.darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%C4%DA%BE%C6%C6%B2.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Coatl",
+    "location_en": "Coastal Dungeon",
+    "description_en": "Slithers across the sandy seafloor and moves very quickly.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "킹아크퍼스",
@@ -933,7 +1288,12 @@
     "image": "images/해안던젼__킹아크퍼스.gif",
     "image_url": "https://web.archive.org/web/20040406221305id_/http://www.darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%C5%B7%BE%C6%C5%A9%C6%DB%BD%BA.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "King Arc Purse",
+    "location_en": "Coastal Dungeon",
+    "description_en": "Boss of the West Abel coast. Empty-headed but fierce in attack.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 4Circle(85) → EXP of max HP 13%"
   },
   {
     "name": "포이즌카카포",
@@ -946,7 +1306,12 @@
     "image": "images/해안던젼__포이즌카카포.gif",
     "image_url": "https://web.archive.org/web/20040406222928id_/http://www.darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%C6%F7%C0%CC%C1%F0%C4%AB%C4%AB%C6%F7.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Poison Kakapo",
+    "location_en": "Coastal Dungeon",
+    "description_en": "Attacks with poisonous tentacles.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 380000–480000 → EXP 21,896,946"
   },
   {
     "name": "플렌트아크퍼스",
@@ -959,7 +1324,12 @@
     "image": "images/해안던젼__플렌트아크퍼스.gif",
     "image_url": "https://web.archive.org/web/20040406224703id_/http://www.darkstory.net:80/Monster/%C7%D8%BE%C8%B4%F8%C1%AF/%C7%C3%B7%BB%C6%AE%BE%C6%C5%A9%C6%DB%BD%BA.gif",
     "source_file": "sea-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Plant Arc Purse",
+    "location_en": "Coastal Dungeon",
+    "description_en": "An octopus-like monster that eats seaweed and wraps itself in it for camouflage—though it is not very effective.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 4Circle(85) → EXP of max HP 13%"
   },
   {
     "name": "그림록",
@@ -972,7 +1342,12 @@
     "image": "images/광산__그림록.gif",
     "image_url": "https://web.archive.org/web/20030511232615id_/http://www.darkstory.net:80/Monster/%B1%A4%BB%EA/%B1%D7%B8%B2%B7%CF.gif",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Grimlock",
+    "location_en": "Mine",
+    "description_en": "A low-tier Mine monster. Attacks with a stone axe; no magic.",
+    "hp_en": "60000–80000",
+    "exp_en": "Quick Dungeon Mine: 4Circle(85) → EXP of max HP 13%"
   },
   {
     "name": "그림록근위병",
@@ -985,7 +1360,12 @@
     "image": "images/광산__그림록근위병.gif",
     "image_url": "https://web.archive.org/web/20030511215810id_/http://www.darkstory.net:80/Monster/%B1%A4%BB%EA/%B1%D7%B8%B2%B7%CF%B1%D9%C0%A7%BA%B4.gif",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Grimlock Royal Guard",
+    "location_en": "Mine",
+    "description_en": "Guards the Grimlock Queen. No magic; strongest among Grimlock soldiers.",
+    "hp_en": "70000–90000",
+    "exp_en": "Quick Dungeon Mine: under 40000 → EXP 5,526,280"
   },
   {
     "name": "그림록병사",
@@ -998,7 +1378,12 @@
     "image": "images/광산__그림록병사.gif",
     "image_url": "https://web.archive.org/web/20030511223436id_/http://www.darkstory.net:80/Monster/%B1%A4%BB%EA/%B1%D7%B8%B2%B7%CF%BA%B4%BB%E7.gif",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Grimlock Soldier",
+    "location_en": "Mine",
+    "description_en": "Grimlock soldier / low-tier Mine monster. Attacks with a small knife; no magic.",
+    "hp_en": "150000+",
+    "exp_en": "Quick Dungeon Mine: 5Circle(99) → EXP of max HP 13%"
   },
   {
     "name": "그림록퀸",
@@ -1011,7 +1396,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Grimlock Queen",
+    "location_en": "Mine",
+    "description_en": "Queen of the Grimlocks, found on the lowest Mine floors. Uses magic and double-wield attacks; may drop a Grimlock Queen circlet.",
+    "hp_en": "200000–350000",
+    "exp_en": "Quick Dungeon Mine: 4Circle(85) → EXP of max HP 13% | Quick Dungeon Mine: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "도둑산타",
@@ -1024,7 +1414,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Thief Santa",
+    "location_en": "Mine",
+    "description_en": "Appears around Christmas. Steals Santa’s clothes and causes trouble.",
+    "hp_en": "200000–350000",
+    "exp_en": ""
   },
   {
     "name": "드라코",
@@ -1037,7 +1432,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Draco",
+    "location_en": "Mine",
+    "description_en": "A signature Mine boss-tier monster. Strong breath magic and fire from its mouth. Claws and scales are used for weapons and learning magic.",
+    "hp_en": "200000–350000",
+    "exp_en": ""
   },
   {
     "name": "오크가드",
@@ -1050,7 +1450,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Orc Guard",
+    "location_en": "Mine",
+    "description_en": "Mid-tier monster from low to high floors. Swings a giant stone hammer; among the most destructive non-magic monsters.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Woodland: 950000–1000000 → EXP 100,022,994 | Quick Dungeon Mine: 580000–700000 → EXP 54,198,047"
   },
   {
     "name": "헬몽크",
@@ -1063,7 +1468,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hell Monk",
+    "location_en": "Mine",
+    "description_en": "A Hell monster on Mine floor 29 representing the martial artist. Attacks with ki and breath magic; may drop Hell Monk armor.",
+    "hp_en": "200000–350000",
+    "exp_en": "Quick Dungeon Mine: 820000–950000 → EXP 86,125,078"
   },
   {
     "name": "헬블루나이트",
@@ -1076,7 +1486,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hell Blue Knight",
+    "location_en": "Mine",
+    "description_en": "A Hell monster on Mine floor 29 representing the warrior. Swings a high-braze battle axe, wears Hell Knight armor, uses breath magic.",
+    "hp_en": "200000–350000",
+    "exp_en": "Quick Dungeon Mine: 700000–820000 → EXP 70,604,280"
   },
   {
     "name": "헬불씨프",
@@ -1089,7 +1504,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hell Thief",
+    "location_en": "Mine",
+    "description_en": "A Hell monster on Mine floor 29 representing the thief. Wears Hell Thief armor and attacks with a curved short sword; uses breath magic.",
+    "hp_en": "200000–350000",
+    "exp_en": "Quick Dungeon Mine: 700000–820000 → EXP 70,604,280"
   },
   {
     "name": "헬소서러",
@@ -1102,7 +1522,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hell Sorcerer",
+    "location_en": "Mine",
+    "description_en": "A Hell monster on Mine floor 29 representing the male mage; uses breath-family magic.",
+    "hp_en": "200000–350000",
+    "exp_en": "Quick Dungeon Mine: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "헬소서리스",
@@ -1115,7 +1540,12 @@
     "image": "",
     "image_url": "",
     "source_file": "cave-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Hell Sorceress",
+    "location_en": "Mine",
+    "description_en": "A Hell monster on Mine floor 29 representing the female mage; uses breath-family magic.",
+    "hp_en": "200000–350000",
+    "exp_en": "Quick Dungeon Mine: 820000–950000 → EXP 86,125,078"
   },
   {
     "name": "거지좀비",
@@ -1128,7 +1558,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Beggar Zombie",
+    "location_en": "Dead Village",
+    "description_en": "A town beggar cursed into a zombie.",
+    "hp_en": "60000–80000",
+    "exp_en": ""
   },
   {
     "name": "고사목",
@@ -1141,7 +1576,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Withered Tree",
+    "location_en": "Dead Village",
+    "description_en": "A cursed barrier tree where villagers’ heads once hung. Cut down by royal knights on King Ruers’ order; no longer exists.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "광부좀비",
@@ -1154,7 +1594,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Miner Zombie",
+    "location_en": "Dead Village",
+    "description_en": "A village miner turned zombie. Attacks with a shovel.",
+    "hp_en": "60000–80000",
+    "exp_en": ""
   },
   {
     "name": "농부좀비",
@@ -1167,7 +1612,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Farmer Zombie",
+    "location_en": "Dead Village",
+    "description_en": "A village farmer turned zombie. Attacks with a plow.",
+    "hp_en": "70000",
+    "exp_en": ""
   },
   {
     "name": "니크르",
@@ -1180,7 +1630,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Nirk",
+    "location_en": "Dead Village",
+    "description_en": "Appears in Dead Village houses and basements. Said to be dead children turned into monsters. Attacks with a long spear.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "다크클레릭",
@@ -1193,7 +1648,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Dark Cleric",
+    "location_en": "Dead Village",
+    "description_en": "Appears in the Dead Village underground dungeon. Uses magic with a death cross.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 700000–820000 → EXP 70,604,280"
   },
   {
     "name": "도깨비불",
@@ -1206,7 +1666,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Will-o’-Wisp",
+    "location_en": "Dead Village",
+    "description_en": "A will-o’-wisp in Dead Village houses, said to be the restless spirits of villagers.",
+    "hp_en": "140000–190000",
+    "exp_en": "Quick Dungeon Underground Ruins: 580000–700000 → EXP 54,198,047"
   },
   {
     "name": "독거미",
@@ -1219,7 +1684,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Poison Spider",
+    "location_en": "Dead Village",
+    "description_en": "A low-tier monster.",
+    "hp_en": "150000–220000",
+    "exp_en": "Quick Dungeon Underground Ruins: 4Circle(71~84, 86~98) → EXP of max HP 13% | Quick Dungeon Underground Ruins: 480000–580000 → EXP 47,793,893"
   },
   {
     "name": "듈라한",
@@ -1232,7 +1702,12 @@
     "image": "images/죽음의마을__듈라한.gif",
     "image_url": "https://web.archive.org/web/20030510015845id_/http://www.darkstory.net:80/Monster/%C1%D7%C0%BD%C0%C7%B8%B6%C0%BB/%B5%E2%B6%F3%C7%D1.gif",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Dullahan",
+    "location_en": "Dead Village",
+    "description_en": "Appears on the lowest Dead Village dungeon floor. Attacks with a long scythe and rides a horse, so it chases very quickly.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "리시드",
@@ -1245,7 +1720,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Lishid",
+    "location_en": "Dead Village",
+    "description_en": "A low-tier monster of the upper Dead Village dungeon; a fire ant grown huge.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "마법좀비",
@@ -1258,7 +1738,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Mage Zombie",
+    "location_en": "Dead Village",
+    "description_en": "A mage who came to purge the Dead Village and became a zombie—the only zombie type that can use magic.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "머미",
@@ -1271,7 +1756,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Mummy",
+    "location_en": "Dead Village",
+    "description_en": "Appears in the Dead Village underground dungeon; buried corpses turned into monsters.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "목수좀비",
@@ -1284,7 +1774,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Carpenter Zombie",
+    "location_en": "Dead Village",
+    "description_en": "A former village carpenter turned zombie.",
+    "hp_en": "60000–80000",
+    "exp_en": ""
   },
   {
     "name": "블랙켓",
@@ -1297,7 +1792,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Black Cat",
+    "location_en": "Dead Village",
+    "description_en": "A cat that appears in Dead Village houses. Blocks approaches to homes that still hold the owner’s spirit.",
+    "hp_en": "130000–180000",
+    "exp_en": ""
   },
   {
     "name": "블루엔리멘탈",
@@ -1310,7 +1810,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Blue Elemental",
+    "location_en": "Dead Village",
+    "description_en": "A powerful vengeful spirit formed from villagers’ grudges. Appears from the upper Dead Village dungeon and blocks the path; uses magic.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Mine: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "새티로스",
@@ -1323,7 +1828,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Satyr",
+    "location_en": "Dead Village",
+    "description_en": "A muscular monster from the mid Dead Village floors. A bit slow.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 700000–820000 → EXP 70,604,280"
   },
   {
     "name": "섀이드",
@@ -1336,7 +1846,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Shade",
+    "location_en": "Dead Village",
+    "description_en": "An earth golem made of dungeon soil; blends with the floor and is hard to see.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 820000–950000 → EXP 86,125,078"
   },
   {
     "name": "스켈톤",
@@ -1349,7 +1864,12 @@
     "image": "images/죽음의마을__스켈톤.gif",
     "image_url": "https://web.archive.org/web/20030125042042id_/http://darkstory.net:80/Monster/%C1%D7%C0%BD%C0%C7%B8%B6%C0%BB/%BD%BA%C4%CC%C5%E6.gif",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Skeleton",
+    "location_en": "Dead Village",
+    "description_en": "A low-tier monster that seems to have come up from the Dead Village underground.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon 해저: 700000–820000 → EXP 70,604,280"
   },
   {
     "name": "웜",
@@ -1362,7 +1882,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Worm",
+    "location_en": "Dead Village",
+    "description_en": "A giant earthworm.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 580000–700000 → EXP 54,198,047"
   },
   {
     "name": "웨어랫",
@@ -1375,7 +1900,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Wererat",
+    "location_en": "Dead Village",
+    "description_en": "A humanoid rat monster.",
+    "hp_en": "150000–210000",
+    "exp_en": "Quick Dungeon Underground Ruins: 380000–480000 → EXP 21,896,946"
   },
   {
     "name": "웨어랫가드",
@@ -1388,7 +1918,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Wererat Guard",
+    "location_en": "Dead Village",
+    "description_en": "A grown wererat with high defense.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 700000–820000 → EXP 70,604,280"
   },
   {
     "name": "좀비",
@@ -1401,7 +1936,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Zombie",
+    "location_en": "Dead Village",
+    "description_en": "An ordinary villager turned into a zombie.",
+    "hp_en": "40000–50000",
+    "exp_en": ""
   },
   {
     "name": "포모리아",
@@ -1414,7 +1954,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Fomorian",
+    "location_en": "Dead Village",
+    "description_en": "Appears in the Dead Village underground dungeon; a mutant that ate strange plants and became a monster.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "플레시고램",
@@ -1427,7 +1972,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Flesh Golem",
+    "location_en": "Dead Village",
+    "description_en": "A monster that crawled out of a coffin in the Dead Village underground dungeon.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "해골지네",
@@ -1440,7 +1990,12 @@
     "image": "",
     "image_url": "",
     "source_file": "dead-town-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Skull Centipede",
+    "location_en": "Dead Village",
+    "description_en": "A centipede of bone with a human-like face.",
+    "hp_en": "",
+    "exp_en": "Quick Dungeon Underground Ruins: 3Circle(55~70) → EXP of max HP 13%"
   },
   {
     "name": "다크틸",
@@ -1453,7 +2008,12 @@
     "image": "images/적룡굴__다크틸.gif",
     "image_url": "https://web.archive.org/web/20040830204655id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%B4%D9%C5%A9%C6%BF.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Darktil",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A mage-type monster. Carries the relic ring sought by advanced mages.",
+    "hp_en": "100000–120000",
+    "exp_en": "Quick Dungeon Underground Ruins: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "데스나이트",
@@ -1466,7 +2026,12 @@
     "image": "images/적룡굴__데스나이트.gif",
     "image_url": "https://web.archive.org/web/20021217064013id_/http://darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%B5%A5%BD%BA%B3%AA%C0%CC%C6%AE.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Death Knight",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A warrior-type monster. Carries the Death Knight helm sought by advanced warriors.",
+    "hp_en": "150000–200000",
+    "exp_en": ""
   },
   {
     "name": "드래곤뉴트",
@@ -1479,7 +2044,12 @@
     "image": "images/적룡굴__드래곤뉴트.gif",
     "image_url": "https://web.archive.org/web/20040830205031id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%B5%E5%B7%A1%B0%EF%B4%BA%C6%AE.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Dragon Newt",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A red dragon of the lowest Red Dragon Cave floor. Attacks with a strong tail and dragon breath.",
+    "hp_en": "250000–300000",
+    "exp_en": ""
   },
   {
     "name": "레드오피온",
@@ -1492,7 +2062,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Red Ophion",
+    "location_en": "Red Dragon Cave",
+    "description_en": "Master of the Red Ophion cave. Appears with 3, 2, or 1 heads; the 3-headed Grand Red Ophion must lose all heads to be slain.",
+    "hp_en": "200000–250000",
+    "exp_en": "Quick Dungeon Woodland: 1000000+ → EXP 105,470,586 | Quick Dungeon Mine: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "레스터데몬",
@@ -1505,7 +2080,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Lester Demon",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A martial-artist type; grown form of Excel Demon. Strikes down with powerful fists.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "마그마고렘",
@@ -1518,7 +2098,12 @@
     "image": "images/적룡굴__마그마고렘.gif",
     "image_url": "https://web.archive.org/web/20030510010156id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%B8%B6%B1%D7%B8%B6%B0%ED%B7%BD.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Magma Golem",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A grown golem of volcanic rock filled with hot magma.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "마그마바룬스",
@@ -1531,7 +2116,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Magma Baruns",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A Baruns born in magma. Small body but powerful magic.",
+    "hp_en": "100000–120000",
+    "exp_en": ""
   },
   {
     "name": "바룬스",
@@ -1544,7 +2134,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Baruns",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A Baruns made of special stone. On death it splits into two Batus.",
+    "hp_en": "100000–120000",
+    "exp_en": ""
   },
   {
     "name": "베레스",
@@ -1557,7 +2152,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Beres",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A thief-type monster; grown form of Phobos. Appears mid-cave and attacks with bone-dragon bones.",
+    "hp_en": "150000–200000",
+    "exp_en": ""
   },
   {
     "name": "브론즈오피온",
@@ -1570,7 +2170,12 @@
     "image": "images/적룡굴__브론즈오피온.gif",
     "image_url": "https://web.archive.org/web/20021217054758id_/http://darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%BA%EA%B7%D0%C1%EE%BF%C0%C7%C7%BF%C2.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Bronze Ophion",
+    "location_en": "Red Dragon Cave",
+    "description_en": "Master of the Bronze cave’s lowest floor. 3/2/1-headed forms; the 3-headed Grand Bronze Ophion must lose all heads.",
+    "hp_en": "200000–250000",
+    "exp_en": ""
   },
   {
     "name": "블루오피온",
@@ -1583,7 +2188,12 @@
     "image": "images/적룡굴__블루오피온.gif",
     "image_url": "https://web.archive.org/web/20040406200022id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%BA%ED%B7%E7%BF%C0%C7%C7%BF%C2.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Blue Ophion",
+    "location_en": "Red Dragon Cave",
+    "description_en": "Master of the Blue cave’s lowest floor. 3/2/1-headed forms; the 3-headed Grand Blue Ophion must lose all heads.",
+    "hp_en": "200000–250000",
+    "exp_en": "Quick Dungeon Mine: 1000000+ → EXP 105,470,586"
   },
   {
     "name": "서펜바투스",
@@ -1596,7 +2206,12 @@
     "image": "images/적룡굴__서펜바투스.gif",
     "image_url": "https://web.archive.org/web/20040406210123id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%BC%AD%C6%E6%B9%D9%C5%F5%BD%BA.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Serpent Batus",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A Batus transformed by magic. Intelligent and aggressive.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "스켈톰번",
@@ -1609,7 +2224,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Skeleton Burn",
+    "location_en": "Red Dragon Cave",
+    "description_en": "The lowest-tier monster of the Red Dragon Cave.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "스톤고렘",
@@ -1622,7 +2242,12 @@
     "image": "images/적룡굴__스톤고렘.gif",
     "image_url": "https://web.archive.org/web/20040406215102id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%BD%BA%C5%E6%B0%ED%B7%BD.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Stone Golem",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A golem made of special moving stone.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "스펙터",
@@ -1635,7 +2260,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접,마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접,마법.",
+    "name_en": "Specter",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A will-o’-wisp formed from the grudges of people who died in the Red Dragon Cave.",
+    "hp_en": "100000–120000",
+    "exp_en": ""
   },
   {
     "name": "안크본드라곤",
@@ -1648,7 +2278,12 @@
     "image": "images/적룡굴__안크본드라곤.gif",
     "image_url": "https://web.archive.org/web/20040406223715id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%BE%C8%C5%A9%BA%BB%B5%E5%B6%F3%B0%EF.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Ankh Bone Dragon",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A red bone dragon of the Red Dragon Cave. Just before death it summons 10 Flybones.",
+    "hp_en": "150000–200000",
+    "exp_en": ""
   },
   {
     "name": "엑셀데몬",
@@ -1661,7 +2296,12 @@
     "image": "images/적룡굴__엑셀데몬.gif",
     "image_url": "https://web.archive.org/web/20040406230354id_/http://www.darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%BF%A2%BC%BF%B5%A5%B8%F3.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Excel Demon",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A martial-artist type. Yields the Demon Jawbone sought by advanced martial artists.",
+    "hp_en": "150000–200000",
+    "exp_en": ""
   },
   {
     "name": "와이젠",
@@ -1674,7 +2314,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법. EXP from modern quick-dungeon tip board where matched.",
+    "name_en": "Wizen",
+    "location_en": "Red Dragon Cave",
+    "description_en": "Appears in the upper Blue cave.",
+    "hp_en": "100000–120000",
+    "exp_en": "Quick Dungeon Underground Ruins: 950000–1000000 → EXP 100,022,994"
   },
   {
     "name": "카벙클",
@@ -1687,7 +2332,12 @@
     "image": "images/적룡굴__카벙클.gif",
     "image_url": "https://web.archive.org/web/20021217065119id_/http://darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%C4%AB%BA%A1%C5%AC.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 마법.",
+    "name_en": "Carbuncle",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A light-type monster with cleric traits. The life orb in its chest is sought by advanced clerics.",
+    "hp_en": "100000–120000",
+    "exp_en": ""
   },
   {
     "name": "포보스",
@@ -1700,7 +2350,12 @@
     "image": "images/적룡굴__포보스.gif",
     "image_url": "https://web.archive.org/web/20021217065610id_/http://darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%C6%F7%BA%B8%BD%BA.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접.",
+    "name_en": "Phobos",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A thief-type monster. Attacks with strong claws; the jewel in its shield is Draco’s Eye, sought by advanced thieves.",
+    "hp_en": "150000–200000",
+    "exp_en": ""
   },
   {
     "name": "포이즌스켈톤",
@@ -1713,7 +2368,12 @@
     "image": "images/적룡굴__포이즌스켈톤.gif",
     "image_url": "https://web.archive.org/web/20021217070350id_/http://darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%C6%F7%C0%CC%C1%F0%BD%BA%C4%CC%C5%E6.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP from darkstory.net Wayback Monster pages (Dec 2002–Jan 2003). 공격형태: 근접/마법.",
+    "name_en": "Poison Skeleton",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A skeleton that uses poison magic.",
+    "hp_en": "100000–120000",
+    "exp_en": ""
   },
   {
     "name": "프로스트스켈론",
@@ -1726,7 +2386,12 @@
     "image": "",
     "image_url": "",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Frost Skeleton",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A skeleton that uses ice-family magic.",
+    "hp_en": "",
+    "exp_en": ""
   },
   {
     "name": "화이어스켈론",
@@ -1739,6 +2404,11 @@
     "image": "images/적룡굴__화이어스켈톤.gif",
     "image_url": "https://web.archive.org/web/20021217071310id_/http://darkstory.net:80/Monster/%C0%FB%B7%E6%B1%BC/%C8%AD%C0%CC%BE%EE%BD%BA%C4%CC%C5%E6.gif",
     "source_file": "reddragon-dun.html",
-    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match."
+    "notes": "2003 lod-mind archive: name/location/level/description. HP blank where darkstory had ? or no match.",
+    "name_en": "Fire Skeleton",
+    "location_en": "Red Dragon Cave",
+    "description_en": "A skeleton that uses fire-family magic.",
+    "hp_en": "",
+    "exp_en": ""
   }
 ]

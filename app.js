@@ -13,16 +13,31 @@
   const habitatBody = $("#habitat-body");
   const sprites = $("#sprites");
 
-  const locations = ["All", ...Array.from(new Set(data.monsters.map((m) => m.location))).sort()];
-  loc.innerHTML = locations.map((l) => `<option value="${escapeAttr(l)}">${escapeHtml(l)}</option>`).join("");
+  const locations = [
+    { ko: "All", en: "All" },
+    ...Array.from(new Set(data.monsters.map((m) => m.location)))
+      .sort()
+      .map((ko) => ({
+        ko,
+        en: data.monsters.find((m) => m.location === ko)?.location_en || ko,
+      })),
+  ];
+  loc.innerHTML = locations
+    .map(
+      (l) =>
+        `<option value="${escapeAttr(l.ko)}">${escapeHtml(
+          l.ko === "All" ? "All / 전체" : `${l.en} / ${l.ko}`,
+        )}</option>`,
+    )
+    .join("");
 
   statsEl.innerHTML = [
-    ["Monsters", data.stats.total],
-    ["With HP", data.stats.hp],
-    ["With EXP", data.stats.exp],
+    ["Monsters / 몬스터", data.stats.total],
+    ["With HP / 체력", data.stats.hp],
+    ["With EXP / 경험치", data.stats.exp],
     ["HP + EXP", data.stats.both],
-    ["With image", data.stats.image],
-    ["Sprites archived", data.stats.sprites],
+    ["With image / 이미지", data.stats.image],
+    ["Sprites / 스프라이트", data.stats.sprites],
   ]
     .map(
       ([label, value]) =>
@@ -41,6 +56,15 @@
     return escapeHtml(s).replaceAll("'", "&#39;");
   }
 
+  function bilingual(en, ko) {
+    const e = (en || "").trim();
+    const k = (ko || "").trim();
+    if (e && k && e !== k) {
+      return `<span class="en">${escapeHtml(e)}</span><span class="ko">${escapeHtml(k)}</span>`;
+    }
+    return escapeHtml(e || k);
+  }
+
   function matches(m) {
     const query = (q.value || "").trim().toLowerCase();
     const location = loc.value;
@@ -51,30 +75,53 @@
     if (filter === "both" && !(m.hp && m.exp)) return false;
     if (filter === "image" && !m.image) return false;
     if (!query) return true;
-    const blob = [m.name, m.location, m.level, m.description, m.hp, m.exp].join(" ").toLowerCase();
+    const blob = [
+      m.name,
+      m.name_en,
+      m.location,
+      m.location_en,
+      m.level,
+      m.description,
+      m.description_en,
+      m.hp,
+      m.hp_en,
+      m.exp,
+      m.exp_en,
+    ]
+      .join(" ")
+      .toLowerCase();
     return blob.includes(query);
   }
 
   function renderBestiary() {
     const list = data.monsters.filter(matches);
-    count.textContent = `${list.length} shown`;
+    count.textContent = `${list.length} shown / ${list.length}마리`;
     grid.innerHTML = list
       .map((m) => {
         const thumb = m.image
-          ? `<img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.name)}" loading="lazy" />`
-          : `<span class="empty">no image</span>`;
+          ? `<img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.name_en || m.name)}" loading="lazy" />`
+          : `<span class="empty">no image<br>이미지 없음</span>`;
         const chips = [];
-        if (m.hp) chips.push(`<span class="chip hp">HP ${escapeHtml(m.hp)}</span>`);
+        if (m.hp) {
+          chips.push(
+            `<span class="chip hp">HP ${escapeHtml(m.hp_en || m.hp)} <span class="chip-ko">${escapeHtml(m.hp)}</span></span>`,
+          );
+        }
         if (m.exp) chips.push(`<span class="chip exp">EXP</span>`);
-        if (!m.hp && !m.exp) chips.push(`<span class="chip">stats incomplete</span>`);
+        if (!m.hp && !m.exp) chips.push(`<span class="chip">stats incomplete / 불완전</span>`);
+        const expBlock = m.exp
+          ? `<p class="fine exp-line"><span class="en">${escapeHtml(m.exp_en || m.exp)}</span><span class="ko">${escapeHtml(m.exp)}</span></p>`
+          : "";
         return `<article class="card">
           <div class="thumb">${thumb}</div>
           <div>
-            <h3>${escapeHtml(m.name)}</h3>
-            <div class="meta">${escapeHtml(m.location)}${m.level ? ` · Lv ${escapeHtml(m.level)}` : ""}</div>
-            <p class="desc">${escapeHtml(m.description || "")}</p>
+            <h3>${bilingual(m.name_en, m.name)}</h3>
+            <div class="meta">${bilingual(m.location_en, m.location)}${
+              m.level ? ` · Lv ${escapeHtml(m.level)}` : ""
+            }</div>
+            <p class="desc">${bilingual(m.description_en, m.description)}</p>
             <div class="chips">${chips.join("")}</div>
-            ${m.exp ? `<p class="fine" style="margin-top:8px">${escapeHtml(m.exp)}</p>` : ""}
+            ${expBlock}
           </div>
         </article>`;
       })
@@ -84,30 +131,48 @@
   let activeHabitat = data.habitats[0]?.location || "";
   function renderHabitatTabs() {
     habitatTabs.innerHTML = data.habitats
-      .map(
-        (h) =>
-          `<button type="button" class="pill ${h.location === activeHabitat ? "active" : ""}" data-h="${escapeAttr(h.location)}">${escapeHtml(h.location)} (${h.monsters.length})</button>`,
-      )
+      .map((h) => {
+        const label = `${h.location_en || h.location} / ${h.location} (${h.monsters.length})`;
+        return `<button type="button" class="pill ${
+          h.location === activeHabitat ? "active" : ""
+        }" data-h="${escapeAttr(h.location)}">${escapeHtml(label)}</button>`;
+      })
       .join("");
   }
   function renderHabitat() {
     const h = data.habitats.find((x) => x.location === activeHabitat) || data.habitats[0];
     if (!h) return;
     habitatBody.innerHTML = h.monsters
-      .map(
-        ([name, desc, level]) =>
-          `<tr><td><strong>${escapeHtml(name)}</strong></td><td>${escapeHtml(desc)}</td><td>${escapeHtml(level)}</td></tr>`,
-      )
+      .map((row) => {
+        const name = row.name ?? row[0];
+        const nameEn = row.name_en || "";
+        const desc = row.description ?? row[1];
+        const descEn = row.description_en || "";
+        const level = row.level ?? row[2];
+        return `<tr>
+          <td><strong>${bilingual(nameEn, name)}</strong></td>
+          <td>${bilingual(descEn, desc)}</td>
+          <td>${escapeHtml(level)}</td>
+        </tr>`;
+      })
       .join("");
   }
 
   function renderSprites() {
     const fromMonsters = data.monsters
       .filter((m) => m.image)
-      .map((m) => ({ name: m.name, loc: m.location, file: m.image }));
+      .map((m) => ({
+        name: m.name,
+        name_en: m.name_en,
+        loc: m.location,
+        loc_en: m.location_en,
+        file: m.image,
+      }));
     const orphans = (data.orphanImages || []).map((o) => ({
       name: o.name,
+      name_en: o.name_en || o.name,
       loc: o.folder,
+      loc_en: o.folder_en || o.folder,
       file: o.file,
     }));
     const seen = new Set();
@@ -119,9 +184,9 @@
     sprites.innerHTML = all
       .map(
         (s) => `<div class="sprite">
-          <img src="${escapeAttr(s.file)}" alt="${escapeAttr(s.name)}" loading="lazy" />
-          <div class="name">${escapeHtml(s.name)}</div>
-          <div class="loc">${escapeHtml(s.loc)}</div>
+          <img src="${escapeAttr(s.file)}" alt="${escapeAttr(s.name_en || s.name)}" loading="lazy" />
+          <div class="name">${bilingual(s.name_en, s.name)}</div>
+          <div class="loc">${bilingual(s.loc_en, s.loc)}</div>
         </div>`,
       )
       .join("");

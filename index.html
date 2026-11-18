@@ -15,14 +15,18 @@
 
   <header class="hero">
     <p class="brand">어둠의전설 · Legend of Darkness</p>
-    <h1>Recovered Bestiary</h1>
+    <h1>Recovered Bestiary <span class="h1-ko">복원 몬스터 도감</span></h1>
     <p class="lede">
       Habitat, HP ranges, quick-dungeon EXP brackets, and archived sprites
       recovered from 2002–2003 fan sites via the Internet Archive.
     </p>
+    <p class="lede ko-lede">
+      2002–2003년 팬사이트 자료를 웨이백 머신으로 복원한 서식지·체력·퀵던전 경험치·스프라이트입니다.
+      Korean originals are shown under each English line.
+    </p>
     <div class="hero-actions">
-      <a class="btn primary" href="#bestiary">Browse monsters</a>
-      <a class="btn" href="#sources">Sources</a>
+      <a class="btn primary" href="#bestiary">Browse monsters · 몬스터 보기</a>
+      <a class="btn" href="#panel-sources">Sources · 출처</a>
       <a class="btn" href="lod_bestiary_final.csv">Download CSV</a>
     </div>
   </header>
@@ -30,31 +34,31 @@
   <section class="stats" id="stats" aria-label="Coverage"></section>
 
   <nav class="tabs" aria-label="Sections">
-    <button type="button" class="tab active" data-panel="bestiary">Bestiary</button>
-    <button type="button" class="tab" data-panel="habitat">Habitat lists</button>
-    <button type="button" class="tab" data-panel="sprites">Sprites</button>
-    <button type="button" class="tab" data-panel="sources">Sources</button>
+    <button type="button" class="tab active" data-panel="bestiary">Bestiary · 도감</button>
+    <button type="button" class="tab" data-panel="habitat">Habitat · 서식지</button>
+    <button type="button" class="tab" data-panel="sprites">Sprites · 이미지</button>
+    <button type="button" class="tab" data-panel="sources">Sources · 출처</button>
   </nav>
 
   <main>
     <section id="panel-bestiary" class="panel active">
       <div class="toolbar">
         <label class="search">
-          <span>Search</span>
-          <input id="q" type="search" placeholder="Name, location, HP…" autocomplete="off" />
+          <span>Search · 검색</span>
+          <input id="q" type="search" placeholder="Name / 이름, location / 서식지, HP…" autocomplete="off" />
         </label>
         <label>
-          <span>Location</span>
+          <span>Location · 서식지</span>
           <select id="loc"></select>
         </label>
         <label>
-          <span>Filter</span>
+          <span>Filter · 필터</span>
           <select id="filt">
-            <option value="all">All</option>
-            <option value="hp">Has HP</option>
-            <option value="exp">Has EXP</option>
+            <option value="all">All · 전체</option>
+            <option value="hp">Has HP · 체력 있음</option>
+            <option value="exp">Has EXP · 경험치 있음</option>
             <option value="both">HP + EXP</option>
-            <option value="image">Has image</option>
+            <option value="image">Has image · 이미지 있음</option>
           </select>
         </label>
         <p class="count" id="count"></p>
@@ -69,16 +73,16 @@
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>몬스터</th><th>특징</th><th>레벨</th></tr>
+            <tr><th>Monster · 몬스터</th><th>Description · 특징</th><th>Level · 레벨</th></tr>
           </thead>
           <tbody id="habitat-body"></tbody>
         </table>
       </div>
-      <p class="fine">Decoded UTF-8 from lod-mind EUC-KR pages (Wayback 2003). Raw archive links often look like gibberish in modern browsers.</p>
+      <p class="fine">Decoded UTF-8 from lod-mind EUC-KR pages (Wayback 2003). Raw archive links often look like gibberish in modern browsers. / lod-mind EUC-KR 페이지를 UTF-8로 복원했습니다.</p>
     </section>
 
     <section id="panel-sprites" class="panel">
-      <p class="fine">54 GIFs archived under darkstory.net/Monster/* — HTML pages cited ~157 sprites; the rest were never captured.</p>
+      <p class="fine">54 GIFs archived under darkstory.net/Monster/* — HTML pages cited ~157 sprites; the rest were never captured. / 웨이백에 남은 스프라이트 54개 (HTML에는 약 157개 언급).</p>
       <div id="sprites" class="sprite-grid"></div>
     </section>
 
