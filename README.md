@@ -4,24 +4,16 @@ Recovered **Legend of Darkness (어둠의전설)** bestiary.
 
 **Hosting: GitHub Pages only** (do not connect this repo to Vercel).
 
-## Site files
-
-Open `index.html` for the bilingual EN/KO browser (habitat, HP, EXP, sprites).
-
-## Enable GitHub Pages (one-time)
-
-1. Make the repository **Public** (Settings → General → Danger Zone → Change visibility), so anyone can open the shared link.
-2. Settings → **Pages**
-3. Build and deployment → Source: **Deploy from a branch**
-4. Branch: **main** / folder: **/ (root)** → Save
-
-Live URL after that:
-
-`https://slashremix1.github.io/LoD-bestiary/`
+Live: https://slashremix1.github.io/LoD-bestiary/
 
 ## Contents
 
-- Bilingual EN/KO monster browser
-- Habitat tables, HP, EXP, sprites
+- Bilingual EN/KO monster browser (habitat, HP, sprites)
+- **EXP blank** — quick-dungeon tip-board values removed; classic Sense/fixed EXP not yet recovered
 - `lod_bestiary_final.csv` / `.json`
-- `SOURCES.md` — provenance links
+- `SOURCES.md` — provenance and rejected EXP candidates
+
+## Enable GitHub Pages (one-time)
+
+1. Repository **Public**
+2. Settings → Pages → Deploy from branch **main** / **/(root)**
