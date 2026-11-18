@@ -241,7 +241,10 @@
       document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
       btn.classList.add("active");
       const panel = document.getElementById(`panel-${btn.dataset.panel}`);
-      if (panel) panel.classList.add("active");
+      if (panel) {
+        panel.classList.add("active");
+        panel.scrollIntoView({ block: "start" });
+      }
     });
   });
 
