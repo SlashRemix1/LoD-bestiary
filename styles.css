@@ -167,6 +167,15 @@ main {
 .panel { display: none; animation: rise 320ms ease-out both; }
 .panel.active { display: block; }
 
+.official-frame {
+  width: 100%;
+  height: 780px;
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
 .toolbar {
   display: flex;
   flex-wrap: wrap;

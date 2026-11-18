@@ -12,6 +12,8 @@
   const habitatTabs = $("#habitat-tabs");
   const habitatBody = $("#habitat-body");
   const sprites = $("#sprites");
+  const pageTabs = $("#page-tabs");
+  const officialFrame = $("#official-frame");
 
   const locations = [
     { ko: "All", en: "All" },
@@ -158,6 +160,21 @@
       .join("");
   }
 
+  const pages = data.officialPages || [];
+  let activePage = pages[0]?.file || "";
+  function renderPages() {
+    if (!pageTabs || !officialFrame) return;
+    pageTabs.innerHTML = pages
+      .map((p) => {
+        const label = `${p.label_en} / ${p.label_ko}${p.page ? ` · ${p.page}` : ""}`;
+        return `<button type="button" class="pill ${
+          p.file === activePage ? "active" : ""
+        }" data-page="${escapeAttr(p.file)}">${escapeHtml(label)}</button>`;
+      })
+      .join("");
+    if (activePage) officialFrame.src = activePage;
+  }
+
   function renderSprites() {
     const fromMonsters = data.monsters
       .filter((m) => m.image)
@@ -202,6 +219,15 @@
     });
   });
 
+  if (pageTabs) {
+    pageTabs.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-page]");
+      if (!btn) return;
+      activePage = btn.dataset.page;
+      renderPages();
+    });
+  }
+
   habitatTabs.addEventListener("click", (e) => {
     const btn = e.target.closest("[data-h]");
     if (!btn) return;
@@ -216,4 +242,5 @@
   renderHabitatTabs();
   renderHabitat();
   renderSprites();
+  renderPages();
 })();

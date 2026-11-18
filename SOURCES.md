@@ -6,13 +6,28 @@ Fields were **merged by Korean monster name** from separate archival sources.
 
 Fan site mirrored at `home.megapass.co.kr/~dungeons/lod/` via Wayback (EUC-KR). Use the Habitat tab for readable UTF-8.
 
-## 2. HP (체력) — darkstory.net Monster pages (2002–2003)
+## 2. HP (체력) — darkstory.net Monster pages (2002–2003), unless section 3 applies
 
 Index: https://web.archive.org/web/20021217010147id_/http://darkstory.net/monster.html
 
-## 3. EXP — not available (KR LoD only)
+Where an official list page was archived, that HP replaces the darkstory number.
 
-EXP columns are **blank**. Rejected sources:
+## 3. HP and EXP — official Nexon monster list (where archived)
+
+The dungeon pages (for example `http://lod.nexon.com/game_info/dungeon/dungeon9.asp`) framed `game_info/monster/list.asp?category=N`. Wayback still has these iframe documents:
+
+| Category | Area | Pages saved |
+|---|---|---|
+| 1 | 우드랜드 | 1–2 |
+| 2 | 지하묘지 | 1 (later pages were not captured) |
+| 4 | 포테의숲 | 1 |
+| 8 | 죽음의마을 | 1 |
+
+Columns are level, **HP (A)**, **EXP (B)**, description. Those numbers replace darkstory HP for the same monster. Spelling variants on the official list (엔트/앤트, 팜펫/팜팻, 트랜트/트렌트, 블루엘리멘탈/블루엔리멘탈) were merged onto the lod-mind name instead of added twice. 니에 and 나이트메어 were only on the official list, so they were added.
+
+Monsters outside those captured pages keep darkstory HP when it existed. Their EXP stays blank.
+
+Rejected sources:
 
 | Candidate | Why rejected |
 |---|---|
@@ -53,4 +68,10 @@ No open GitHub/KR LoD emulator repo with compiled habitat monster EXP (적룡굴
 
 ## 4. Sprites
 
-darkstory.net `/Monster/*/*.gif` via Wayback CDX (54 GIFs).
+darkstory.net `/Monster/*/*.gif` via Wayback CDX (54 GIFs). A monster is given an image only when that file is in `images/`.
+
+Official `http://s.nx.com/.../mns*.gif` sprites were **not** captured by the Wayback Machine, and `s.nx.com` no longer resolves. Those images are skipped.
+
+## 5. Original iframes
+
+UTF-8 copies of the list documents live in `sources/official-iframes/` and are shown on the Official pages tab. The parent dungeon shells (`dungeon9.asp`, `dungeon1.asp`) are saved next to them. Broken `s.nx.com` images are removed when the archived page loads.
