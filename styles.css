@@ -172,7 +172,7 @@ main {
   background: var(--card);
   border-radius: 6px;
   padding: 14px 16px;
-  margin-bottom: 14px;
+  margin-top: 14px;
 }
 .area-blurb h2 {
   margin: 0 0 6px;
@@ -344,7 +344,8 @@ th {
   color: var(--accent2);
   font-weight: 600;
 }
-td:last-child, th:last-child { white-space: nowrap; }
+td.num, th:nth-child(n + 3) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.num.missing { color: var(--muted); }
 td .en { display: block; color: var(--ink); }
 td .ko { display: block; margin-top: 3px; }
 

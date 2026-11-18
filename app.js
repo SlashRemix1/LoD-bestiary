@@ -105,16 +105,9 @@
           ? `<img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.name_en || m.name)}" loading="lazy" />`
           : `<span class="empty">no image<br>이미지 없음</span>`;
         const chips = [];
-        if (m.hp) {
-          chips.push(
-            `<span class="chip hp">HP ${escapeHtml(m.hp_en || m.hp)} <span class="chip-ko">${escapeHtml(m.hp)}</span></span>`,
-          );
-        }
-        if (m.exp) chips.push(`<span class="chip exp">EXP</span>`);
-        if (!m.hp && !m.exp) chips.push(`<span class="chip">stats incomplete / 불완전</span>`);
-        const expBlock = m.exp
-          ? `<p class="fine exp-line"><span class="en">${escapeHtml(m.exp_en || m.exp)}</span><span class="ko">${escapeHtml(m.exp)}</span></p>`
-          : "";
+        if (m.hp) chips.push(`<span class="chip hp">HP ${escapeHtml(m.hp)}</span>`);
+        if (m.exp) chips.push(`<span class="chip exp">EXP ${escapeHtml(m.exp)}</span>`);
+        if (!m.hp && !m.exp) chips.push(`<span class="chip">no official HP/EXP · 공식 수치 없음</span>`);
         return `<article class="card">
           <div class="thumb">${thumb}</div>
           <div>
@@ -124,7 +117,6 @@
             }</div>
             <p class="desc">${bilingual(m.description_en, m.description)}</p>
             <div class="chips">${chips.join("")}</div>
-            ${expBlock}
           </div>
         </article>`;
       })
@@ -176,10 +168,19 @@
         const desc = row.description ?? row[1];
         const descEn = row.description_en || "";
         const level = row.level ?? row[2];
+        const stat = data.monsters.find((m) => m.name === name && m.location === h.location);
+        const hp = stat?.hp || row.hp || "";
+        const exp = stat?.exp || row.exp || "";
+        const cell = (value) =>
+          value
+            ? `<td class="num">${escapeHtml(value)}</td>`
+            : `<td class="num missing">—</td>`;
         return `<tr>
           <td><strong>${bilingual(nameEn, name)}</strong></td>
           <td>${bilingual(descEn, desc)}</td>
-          <td>${escapeHtml(level)}</td>
+          <td class="num">${escapeHtml(level)}</td>
+          ${cell(hp)}
+          ${cell(exp)}
         </tr>`;
       })
       .join("");
