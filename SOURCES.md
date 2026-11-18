@@ -22,6 +22,17 @@ EXP columns are **blank**. Rejected sources:
 
 Still seeking: **Korean LoD** Sense Monster dumps, official 2005 guidebook Chapter 5 scans, or **KR** private-server/emulator monster tables (not Dark Ages).
 
+### KR private servers checked (no public monster-EXP dump yet)
+
+| Lead | Notes |
+|---|---|
+| **Yuki** | Name suggested by user; no public index (Discord/homepage/GitHub pack) found under 유키/Yuki + 어둠의전설 |
+| Legacy (`darklegacy.online`) | Claims 본섭 balance; client via Discord after 1:1 inquiry — no public data files |
+| BOX / Origin / Black | Active KR free-server ads; Discord-gated; no published monster tables |
+| 2017 gamezone “구축법” | Describes a KR pack `db/` with `experience` / `abilityexp` (player level curves), not per-monster EXP |
+
+No open GitHub/KR LoD emulator repo with compiled habitat monster EXP (적룡굴, 죽음의마을, etc.) has surfaced.
+
 ## 4. Sprites
 
 darkstory.net `/Monster/*/*.gif` via Wayback CDX (54 GIFs).
