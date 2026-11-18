@@ -17,12 +17,12 @@
     <p class="brand">어둠의전설 · Legend of Darkness</p>
     <h1>Recovered Bestiary <span class="h1-ko">복원 몬스터 도감</span></h1>
     <p class="lede">
-      Habitat, HP, and sprites from 2002–2003 Korean fan archives.
-      EXP is blank — Dark Ages and quick-dungeon tables are not used (wrong balance/areas).
+      Level, description, HP, and EXP come from the official Nexon monster lists wherever those pages were archived.
+      Darkstory numbers are not used. Areas without an archived list have blank HP and EXP.
     </p>
     <p class="lede ko-lede">
-      서식지·체력·스프라이트는 2002–2003 한국 팬사이트 복원입니다.
-      경험치는 비움: Dark Ages·퀵던전 수치는 한국 서버와 달라 사용하지 않습니다.
+      레벨·설명·체력·경험치는 웨이백에 남은 공식 넥슨 몬스터 목록을 씁니다.
+      darkstory 수치는 쓰지 않습니다. 목록이 없는 지역은 체력과 경험치를 비워 둡니다.
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="#bestiary">Browse monsters · 몬스터 보기</a>
@@ -37,6 +37,7 @@
     <button type="button" class="tab active" data-panel="bestiary">Bestiary · 도감</button>
     <button type="button" class="tab" data-panel="habitat">Habitat · 서식지</button>
     <button type="button" class="tab" data-panel="sprites">Sprites · 이미지</button>
+    <button type="button" class="tab" data-panel="pages">Official pages · 공식 페이지</button>
     <button type="button" class="tab" data-panel="sources">Sources · 출처</button>
   </nav>
 
@@ -73,17 +74,27 @@
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Monster · 몬스터</th><th>Description · 특징</th><th>Level · 레벨</th></tr>
+            <tr><th>Monster · 몬스터</th><th>Description · 특징</th><th>Level · 레벨</th><th>HP · 체력</th><th>EXP · 경험치</th></tr>
           </thead>
           <tbody id="habitat-body"></tbody>
         </table>
       </div>
-      <p class="fine">Decoded UTF-8 from lod-mind EUC-KR pages (Wayback 2003). Raw archive links often look like gibberish in modern browsers. / lod-mind EUC-KR 페이지를 UTF-8로 복원했습니다.</p>
+      <div id="habitat-blurb"></div>
+      <div id="other-areas"></div>
+      <p class="fine">HP and EXP in this table are the official Nexon list values. A dash means that monster was not on an archived official list. Horror Castle and Noes Endor Tower have area text, but their monster tables were not archived.</p>
     </section>
 
     <section id="panel-sprites" class="panel">
-      <p class="fine">54 GIFs archived under darkstory.net/Monster/* — HTML pages cited ~157 sprites; the rest were never captured. / 웨이백에 남은 스프라이트 54개 (HTML에는 약 157개 언급).</p>
+      <p class="fine">Official Nexon sprites were not archived, so they are omitted. The GIFs shown here are the only monster pictures Wayback saved, from darkstory.net. They are pictures only. Stats on the cards are not from darkstory.</p>
       <div id="sprites" class="sprite-grid"></div>
+    </section>
+
+    <section id="panel-pages" class="panel">
+      <p class="fine">These are the original monster-list iframes from <code>lod.nexon.com/game_info/monster/list.asp</code>, saved from the Wayback Machine. The dungeon pages (for example dungeon9.asp, 지하묘지) loaded this document inside an iframe. Images on <code>s.nx.com</code> were not archived, so they are omitted.</p>
+      <p class="fine ko-lede">던전 페이지가 iframe으로 불러오던 공식 몬스터 목록입니다. <code>s.nx.com</code> 이미지는 웨이백에 없어 빠뜨렸습니다.</p>
+      <div id="page-tabs" class="pill-row"></div>
+      <iframe id="official-frame" class="official-frame" title="Official monster list"></iframe>
+      <p class="fine">Dungeon shells, 2024–2025 Wayback copies: <a href="sources/official-iframes/dungeons/dungeon1.html">1 우드랜드</a> · <a href="sources/official-iframes/dungeons/dungeon2.html">2 포테의 숲</a> · <a href="sources/official-iframes/dungeons/dungeon3.html">3 서아벨 해안</a> · <a href="sources/official-iframes/dungeons/dungeon4.html">4 서뤼케시온 해안</a> · <a href="sources/official-iframes/dungeons/dungeon5.html">5 죽음의 마을</a> · <a href="sources/official-iframes/dungeons/dungeon6.html">6 호러캐슬</a> · <a href="sources/official-iframes/dungeons/dungeon7.html">7 오피온 동굴</a> · <a href="sources/official-iframes/dungeons/dungeon8.html">8 노에스엔도르탑</a> · <a href="sources/official-iframes/dungeons/dungeon9.html">9 지하묘지</a></p>
     </section>
 
     <section id="panel-sources" class="panel">
@@ -92,18 +103,16 @@
         <p>lod-mind fan site → <code>home.megapass.co.kr/~dungeons/lod/*</code> via Wayback (2003). Use the Habitat lists tab for readable UTF-8 tables.</p>
       </article>
       <article class="source-card">
-        <h2>HP (체력)</h2>
-        <p>darkstory.net Monster pages via Wayback (Dec 2002–Jan 2003).</p>
-        <p><a href="https://web.archive.org/web/20021217010147/http://darkstory.net/monster.html" target="_blank" rel="noopener">Wayback monster index</a></p>
-      </article>
-      <article class="source-card">
-        <h2>EXP</h2>
-        <p><strong>Blank.</strong> Quick-dungeon and Dark Ages (EN) tables were rejected — KR LoD has different areas and balance. Still looking for a Korean Sense Monster dump, the 2005 guidebook Monster Date List, or KR private-server monster tables.</p>
-        <p>See <a href="SOURCES.md">SOURCES.md</a>.</p>
+        <h2>HP and EXP</h2>
+        <p>Official Nexon <code>game_info/monster/list.asp</code> only. Wayback captured 우드랜드 (2 pages), 지하묘지, 포테의숲, and 죽음의마을. Column A is HP and column B is EXP. A official “?” is left blank. Every other area’s HP and EXP are blank. Darkstory, quick-dungeon, and Dark Ages numbers are not used.</p>
       </article>
       <article class="source-card">
         <h2>Sprites</h2>
-        <p>darkstory.net <code>/Monster/*/*.gif</code> via Wayback CDX. 54 unique GIFs recovered and linked by name where possible.</p>
+        <p>darkstory.net <code>/Monster/*/*.gif</code> via Wayback CDX. 54 GIFs, linked by name where the file exists. Official <code>mns*.gif</code> files on <code>s.nx.com</code> were not archived and are skipped.</p>
+      </article>
+      <article class="source-card">
+        <h2>Original iframes</h2>
+        <p>UTF-8 copies of the list documents those dungeon pages framed. See the Official pages tab.</p>
       </article>
       <p class="fine">Downloads: <a href="lod_bestiary_final.csv">CSV</a> · <a href="lod_bestiary_final.json">JSON</a> · <a href="SOURCES.md">SOURCES.md</a></p>
     </section>

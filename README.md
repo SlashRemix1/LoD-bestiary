@@ -8,8 +8,9 @@ Live: https://slashremix1.github.io/LoD-bestiary/
 
 ## Contents
 
-- Bilingual EN/KO monster browser (habitat, HP, sprites)
-- **EXP** from Dark Ages Library classic solo-max tables (English LoD), habitat-matched — not quick-dungeon
+- Bilingual EN/KO monster browser (habitat, HP, EXP, sprites)
+- HP, EXP, level, and description from archived official Nexon `list.asp` iframes where those pages exist. Darkstory numbers are not used. Other areas leave HP and EXP blank.
+- Official list iframes under `sources/official-iframes/` (Official pages tab)
 - `lod_bestiary_final.csv` / `.json`
 - `SOURCES.md` — provenance and caveats
 

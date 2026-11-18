@@ -1,0 +1,421 @@
+<!-- Official dungeon shell hosting monster list iframe
+  Source: http://lod.nexon.com/game_info/dungeon/dungeon1.asp
+  Wayback: https://web.archive.org/web/20090601id_/http://lod.nexon.com/game_info/dungeon/dungeon1.asp
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>::: 어둠의전설 - 전설이 살아 움직이는 그 곳으로 :::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no">
+
+<link rel="stylesheet" type="text/css" href="/lib/css/common.asp" />
+<link rel="stylesheet" type="text/css" href="/lib/css/sub_layout.asp" />
+<link rel="stylesheet" type="text/css" href="/lib/css/PlayerStyleGuide.css" />
+
+<script type="text/javascript" src="http://s.nx.com/s1/global/ngb_headstart.js"></script>
+<!--<script type="text/javascript" src="http://ahnlabdownload.nefficient.co.kr/asp/cab/mkdplus.js"></script>-->
+<script type="text/javascript" src="http://platform.nx.com/activex/ahnlab/mkdplus.js"></script>
+<script type="text/javascript" src="/lib/js/common/GnxStringUtility.js"></script>
+<script type="text/javascript" src="/lib/js/common/GnxScriptUtility.js"></script>
+<script type="text/javascript" src="/lib/js/common/GnxCookieUtility.js"></script>
+<script type="text/javascript" src="/lib/js/common/GnxFlashActivate.js"></script>
+<script type="text/javascript" src="http://s.nx.com/s1/common/GnxBanner.js"></script>
+
+<script type="text/javascript" src="/lib/js/common.js"></script>
+<script type="text/javascript" src="/lib/js/function.js"></script>
+<script type="text/javascript" src="/lib/js/notice.js"></script>
+<script type="text/javascript" src="http://s.nx.com/s1/global/ngb_headend.js"></script>
+<!-- gws.javascript -->
+<script type="text/javascript" src="/lib/js/Reference/gws_javascript.js"></script>
+<!-- gws.javascript -->
+</head>
+<body>
+<script>document.addEventListener("error",function(e){if(e.target&&e.target.tagName==="IMG"){e.target.remove();}},true);</script>
+<script type="text/javascript" src="http://s.nx.com/s1/global/ngb_bodystart.js"></script>
+<!-- NexonBar Start -->
+<div id="GlobalNxBar"><script type="text/javascript" src="http://s.nx.com/s1/global/ngb_gamegnb.js"></script></div>
+<!-- NexonBar End -->
+<div id="body_area">
+<table>
+<!-- Header Start-->
+<tr style="height:242px;">
+	<td rowspan="2" id="top_left"></td>
+	<td id="top_center" class="vat">
+		<div style="width:960px;position:relative;">
+			<div style="position:absolute;left:0px;top:0px;z-index:1">
+			<script type="text/javascript">
+				// <![CDATA[
+				GnxFlashActivate('/lib/swf/template/top_game_info.swf',583,242,'transparent',0,0);
+				// ]]>
+			</script>
+			</div>
+			
+			<div style="position:absolute;left:370px;top:0;z-index:2;">
+				<script type="text/javascript">
+				// <![CDATA[
+				GnxFlashActivate('/lib/swf/template/menu.swf?mMnu=game_info&sm_selected=8',610,100,'transparent',0,0);
+				// ]]>
+				</script>
+			</div>
+			
+			<div style="position:absolute;left:28px;top:85px;z-index:3;">
+				<script type="text/javascript">
+				// <![CDATA[
+				GnxFlashActivate('/lib/swf/template/download.swf',151,161,'transparent',0,0);
+				// ]]>
+				</script>
+			</div>
+			
+			<div style="position:absolute;left:0px;top:0px;z-index:4;">
+				<script type="text/javascript">
+				// <![CDATA[
+				GnxFlashActivate('/lib/swf/template/logo.swf',210,80,'transparent',0,0);
+				// ]]>
+				</script>
+			</div>
+
+<script type="text/javascript">
+function setScrollLed() {
+	if(window.ActiveXObject) {
+		var oXMLHTTP = new ActiveXObject("Msxml2.XMLHTTP"); 
+	} else if(window.XMLHttpRequest) {
+		var oXMLHTTP = new XMLHttpRequest() ;
+	}
+	var data = "";
+	var sURL = "/lib/ajax/get_board_led_top10.asp";
+	
+	oXMLHTTP.open("GET",sURL,false); 
+	oXMLHTTP.send(data); 
+	
+	eval(oXMLHTTP.responseText);
+	
+	var str = ""
+	for(var i=0; i<arrLed.length; i++) {
+		str += "<span style=\"color:#ffa717;\">"+ arrLed[i].Category +"</span>&nbsp;<span style=\"color:#fff;\">"+ arrLed[i].Content +"</span>&nbsp;";
+		str += "<span style=\"color:#c1ab91;\">["+ arrLed[i].WriterServer +"]"+ arrLed[i].WriterName +"</span>&nbsp;&nbsp;";
+	}
+	document.getElementById("led_text").innerHTML = str;
+}
+function scrollLed() {
+	var obj = document.getElementById('led_text');
+	obj.style.left = parseInt(obj.style.left)-4 + "px";
+	if(parseInt(obj.style.left)+obj.offsetWidth<0) obj.style.left = 600 +"px";
+	window.setTimeout("scrollLed()", 100);
+}
+NgbEVM.AddCommand( NgbEVM.k_nEventType_onPageEnd, new NgbEVMDelegator( setScrollLed ));
+NgbEVM.AddCommand( NgbEVM.k_nEventType_onPageEnd, new NgbEVMDelegator( scrollLed ));
+</script>
+			<div style="position:absolute;left:228px;top:198px;z-index:6;" id="led">
+				<div style="position:relative;margin:6px 0 0 78px;"><div style="position:absolute;width:650px;height:13px;clip:rect(0px 580px 13px 0px);overflow:hidden;">
+					<div id="led_text" style="position:absolute;top:0px;left:20px;"></div>
+				</div></div>
+			</div>
+		</div>
+	</td>
+	<td rowspan="2" id="top_right"></td>
+</tr>
+<!-- Header End -->
+<!-- Center Start -->
+<tr style="height:100%;">
+	<td class="vat bg_leftmenu">
+	<!-- 퀵메뉴 -->
+		<div style="float:left;height:0px;width:0px;font-size:0px;margin:0px;padding:0px;line-height:0px;position:relative;">
+			<div id="right_menu" style="position:absolute; top:0px; left:970px; z-index:50;">
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/right_menu.gif" alt="" usemap="#menu_map" />
+				<map name="menu_map" id="menu_map">
+					<area shape="circle" coords="51,58,28" href="http://classicrpg.nexon.com/" target="_blank" alt="" />
+					<area coords="8,109,93,130" href="http://cash.nexon.com/mypage/page/nx.aspx?url=cash/cashInfo&ST=nexon&PS=sub_gnbservice" target="_blank" alt="" />
+					<area coords="8,139,93,161" href="http://freecash.nexon.com" target="_blank" alt="" />
+					<area coords="8,169,93,191" href="http://www.nexon.com/nx/Page/Gnx.aspx?URL=Help/FAQ&oidarticlecategory_search=12" target="_blank" alt="" />
+					<area coords="8,199,93,221" href="/support/support.asp" target="_self" alt="" />
+				</map>
+			</div>
+		</div>
+	
+		<!--왼쪽-->
+		<div id="left_area">
+			<div id="login_area">
+				<div id="login_box">
+
+
+<div style="display:none;">사이트체커</div>
+
+<script type="text/javascript" >
+function LoginNexon() {
+	var NX = document.getElementById("NX");
+	if(!chkBlank(NX.NxTxtLocalID)) {alert("아이디를 입력해주세요"); return false;}
+	if(!chkBlank(NX.NxTxtPassword)) {alert("비밀번호를 입력해주세요"); return false;}
+
+	var strNexonID = trim(NX.NxTxtLocalID.value);
+	var strPassword = trim(NX.NxTxtPassword.value);
+	if(NX.NxCheckKeyDefense.checked) {
+		strPassword = trim(GnxMKDPlus.GetText("NX","NxTxtPassword"))
+	}
+	NgbLogin.Login( strNexonID, strPassword );
+}
+
+var codeRegSite = 161;
+// 회원가입
+function GnxNxcomRegisterButton_DoPostBack()
+{
+	NgbMember.GoRegisterPage( codeRegSite ); // 사이트별 제공된 code 값.
+}
+// 아이디/비번찾기
+function GnxNxcomFindIDButton_DoPostBack()
+{
+	NgbMember.SearchNexonID( codeRegSite ); // 사이트별 제공된 code 값.
+}
+</script>
+					<!-- 로그인 OUT Start -->
+					<form method="post" id="NX" name="NX" onsubmit="LoginNexon();return false;">
+					<table width="100%">
+					<colgroup><col width="130" /><col/></colgroup>
+					<tr style="height:30px;">
+						<td>
+							<div style="position:relative;width:115px;height:21px;background:url('http://s.nx.com/s2/game/lod/lod2007/image/template/bg_text.gif') no-repeat;">
+								<input type="text" name="NxTxtLocalID" id="NxTxtLocalID" maxlength="20" style="margin:3px 0 0 8px;border:0;width:85px;height:14px;" onfocus="document.getElementById('coverNxTxtLocalID').style.display='none';" onblur="if(this.value.length>0) {return false} else {document.getElementById('coverNxTxtLocalID').style.display='block';}" tabindex="1" />
+								<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_id.gif" class="vam" style="position:absolute;left:8px;top:6px;cursor:text;" id="coverNxTxtLocalID" onclick="document.getElementById('NxTxtLocalID').focus();" />
+							</div>
+						</td>
+						<td rowspan="2" class="tal vat">&nbsp;<input type="image" src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_login.gif" class="vam"/></td>
+					</tr>
+					<tr style="height:20px;">
+						<td>
+							<div style="position:relative;width:115px;height:21px;background:url('http://s.nx.com/s2/game/lod/lod2007/image/template/bg_text.gif') no-repeat;">
+								<input type="password" name="NxTxtPassword" id="NxTxtPassword" maxlength="16" style="margin:3px 0 0 8px;border:0;width:85px;height:14px;" onfocus="document.getElementById('coverNxTxtPassword').style.display='none';" onblur="if(this.value.length>0) {return false} else {document.getElementById('coverNxTxtPassword').style.display='block';}" tabindex="2" />
+								<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_pwd.gif" class="vam" style="position:absolute;left:8px;top:6px;cursor:text;" id="coverNxTxtPassword" onclick="document.getElementById('NxTxtPassword').focus();" />
+							</div>
+						</td>
+					</tr>
+					<tr style="height:28px;">
+						<td colspan="2" class="tac">
+							<input type="checkbox" name="NxCheckKeyDefense" id="NxCheckKeyDefense" value="" class="vam" onclick="return GnxMKDPlus.SetUpKeyDefense(true);" />
+							<a href="#" onclick="GnxMKDPlus.SetUpKeyDefense(false);"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_login1.gif" class="vam"/></a>
+							<input type="checkbox" name="NxCheckFireWall" id="NxCheckFireWall" value=""  class="vam" onclick="return GnxMKDPlus.SetUpFireWall(true);" />
+							<a href="#" onclick="GnxMKDPlus.SetUpFireWall(false);"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_login2.gif" class="vam"/></a>
+						</td>
+					</tr>			
+					<tr style="height:10px;">
+						<td colspan="2">
+							<div style="height:1px;background:#dbd7c3;width:100%;overflow:hidden;"></div>
+							<div style="height:1px;background:#ffffff;width:100%;overflow:hidden;"></div>
+						</td>
+					</tr>
+					<tr style="height:25px;">
+						<td colspan="2" class="tac">
+							<!--
+							<a href="#" onclick="window.open('https://www.nexon.com/nx/Page/GnxPopupSecure.aspx?URL=Login/SearchID', 'SearchID', 'scrollbars=no, resizable=no, width=370, height=436');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_search.gif" class="vam" /></a>
+							<a href="#" onclick="window.open('https://www.nexon.com/nx/page/gnxsecure.aspx?url=join/join');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_guide.gif" class="vam" /></a>
+							-->
+							<a href="#" onclick="GnxNxcomFindIDButton_DoPostBack();"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_search.gif" class="vam" /></a>
+							<a href="#" onclick="GnxNxcomRegisterButton_DoPostBack();"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_guide.gif" class="vam" /></a>
+						</td>
+					</tr>
+					</table>
+					</form>
+					<!-- 로그인 OUT End -->
+
+				</div>
+			</div>
+			
+			<div id="submenu_area">
+				<script type="text/javascript">
+				// <![CDATA[
+				GnxFlashActivate('/lib/swf/template/sub_game_info.swf?mMnu=game_info&sMnu=8','210','335','transparent',0,0);
+				// ]]>
+				</script>
+			</div>
+			<!--넥슨 플래쉬 배너-->
+			<div id="banner_area">
+<script type="text/javascript">
+	var Banner = new GNXBanner();
+	Banner.setSize( 200, 170 );
+	Banner.addItem( "lod.nexon.com", 'ros_box@left', "" );
+	Banner.Write();
+</script>
+			</div>
+			<!--넥슨 캐시,개시샵이용안내-->
+			<div id="cashguide_area">
+				<a href="http://freecash.nexon.com" target="_blank"><img src="http://s.nx.com/s2/game/lod/lod2007/image/main/btn_nexon_recharge.gif" width="210" height="39" class="vat" /></a>
+			</div>
+			<!--퀵버튼-->
+			<div id="quick_area">
+				<a href="#" onclick="goURL('guide0');" onfocus="this.blur();"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_banner_guide.gif" style="float:left" /></a>
+				<a href="#" onclick="goURL('community3');" onfocus="this.blur();"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_banner_kin.gif" style="float:left" /></a>
+				<a href="#" onclick="goURL('cash_shop0');" onfocus="this.blur();"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/btn_banner_cash_shop.gif" style="float:left" /></a>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<p style="margin:30px;"></p>
+		</div>
+		
+		<!-- 중앙 -->
+		<div id="center_area">
+			<div id="content">
+			        
+<!-- 타이틀 Start -->
+<img src="http://s.nx.com/s2/game/lod/lod2007/image/title/txt_game_info8.gif" class="vab" />
+<img src="http://s.nx.com/s2/game/lod/lod2007/image/title/txt_sub_game_info8.gif" class="vab" />
+<!-- 타이틀 End -->
+<p style="margin:15px;"></p>
+
+<script type="text/javascript">
+var htmlTab = new __htmlTab();
+htmlTab.imgURL = "http://s.nx.com/s2/game/lod/lod2007/image";
+htmlTab.tabType = 2;
+htmlTab.add("/tab/tab_dungeon1_on.gif","/tab/tab_dungeon1_off.gif","dungeon1.asp");
+htmlTab.add("/tab/tab_dungeon2_on.gif","/tab/tab_dungeon2_off.gif","dungeon2.asp");
+htmlTab.add("/tab/tab_dungeon3_on.gif","/tab/tab_dungeon3_off.gif","dungeon3.asp");
+htmlTab.add("/tab/tab_dungeon4_on.gif","/tab/tab_dungeon4_off.gif","dungeon4.asp");
+htmlTab.add("/tab/tab_dungeon5_on.gif","/tab/tab_dungeon5_off.gif","dungeon5.asp");
+htmlTab.add("/tab/tab_dungeon6_on.gif","/tab/tab_dungeon6_off.gif","dungeon6.asp");
+htmlTab.add("/tab/tab_dungeon7_on.gif","/tab/tab_dungeon7_off.gif","dungeon7.asp");
+htmlTab.add("/tab/tab_dungeon8_on.gif","/tab/tab_dungeon8_off.gif","dungeon8.asp");
+htmlTab.add("/tab/tab_dungeon9_on.gif","/tab/tab_dungeon9_off.gif","dungeon9.asp");
+
+htmlTab.cPosition = 0;
+htmlTab.generate();
+</script>
+
+<p style="margin:20px;"></p>
+
+<img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/title_1.gif" alt="" />
+
+<p style="margin:15px;"></p>
+
+<img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/dungeon1/img_bar1.gif" alt="" />
+
+<p style="margin:15px;"></p>
+
+<table width="650">
+<tr style="height:258px;">
+	<td style="width:283px;" class="tal vat"><img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/dungeon1/img1.gif" alt="" /></td>
+	<td style="width:367px;">
+		<table style="height:258px;">
+		<tr>
+			<td class="vat" colspan="3"><img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/dungeon1/txt3.gif" style="margin:15px 0 0 0;"  alt="" /></td>
+		</tr>
+		<tr>
+			
+			<td class="vab tac">
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/dungeon1/img2.gif"  alt="" />
+				
+				<p style="margin:3px;"></p>
+				
+				<a href="#" onclick="openWindowCenter('pop.asp?dungeonName=dungeon1&CurNo=2&EndNO=4', 'dungeon', 614, 430, 'no');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/style_guide/btn_zoom.gif"  alt="" /></a>
+			</td>
+			
+			<td class="vab tac">
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/dungeon1/img3.gif"  alt="" />
+				
+				<p style="margin:3px;"></p>
+				
+				<a href="#" onclick="openWindowCenter('pop.asp?dungeonName=dungeon1&CurNo=3&EndNO=4', 'dungeon', 614, 430, 'no');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/style_guide/btn_zoom.gif"  alt="" /></a>
+			</td>
+			
+			<td class="vab tac">
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/game_info/dungeon/dungeon1/img4.gif"  alt="" />
+				
+				<p style="margin:3px;"></p>
+				
+				<a href="#" onclick="openWindowCenter('pop.asp?dungeonName=dungeon1&CurNo=4&EndNO=4', 'dungeon', 614, 430, 'no');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/style_guide/btn_zoom.gif"  alt="" /></a>
+			</td>
+			
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+<p style="margin:25px;"></p>
+
+<!-- 몬스터 -->
+<table width="650" height="50">
+<tr>
+	<td><iframe src="/game_info/monster/list.asp?category=1" frameborder="0" width="100%" height="100%" scrolling="no" name="ifrmMonster" id="ifrmMonster" allowtransparency="true"></iframe></td>
+</tr>
+</table>
+			</div>
+			<div id="content_bottom"></div>
+			
+			<p style="margin:30px;"></p>	
+		</div>
+		<div style="clear:both;"></div>
+	</td>
+</tr>
+<!-- Footer Start-->
+<tr style="height:161px;background:#f0e2d6;">
+	<td></td>
+	<td class="vat">
+		<div id="copyright">
+		
+		<p style="margin:8px;"></p>
+		
+		<table width="960">
+		<colgroup><col width="230" /><col width="730" /></colgroup>
+		<tr style="height:106px;">
+			<td class="tac"><a href="http://company.nexon.com/" target="_blank"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/img_logo.gif" class="vam"/></a></td>
+			<td class="tal">
+				<a href="http://company.nexon.com/" target="_blank"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_company.gif" alt="회사소개" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="http://company.nexon.com/html/recruit/main.asp" target="_blank"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_recruit.gif" alt="채용안내" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="#" onclick="window.open('http://www.nexon.com/KR/info/agree1_popup.html','wopen1','width=600,height=600,toolbars=no');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_userrule.gif" alt="이용자약관" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="#" onclick="window.open('/etc/game_user_grade_pop/content.asp','','width=500,height=440');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_gamegrade.gif" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="#" onclick="window.open('http://www.nexon.com/KR/info/privacy_popup.html','wopen','width=600,height=550,toolbars=no');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_userinfo.gif" alt="개인정보 및 청소년보호정책" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="#" onclick="window.open('/footer/operation_rule_lod.html','','width=600,height=600');"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_operation.gif" alt="운영정책" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="http://pcbang.nexon.co.kr/?ST=nexon&PS=footer" target="_blank"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_pcroom.gif" alt="넥슨PC방" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="http://pcbang.nexon.co.kr/nexoncom/PCBANG_init.asp" onclick="window.open(this.getAttribute('href'), '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizeable=no, copyhistory=no, width=498, height=365');return false;" target="_blank"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_searchpcroom.gif" alt="PC방찾기" class="vam"/></a>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_bar.gif" class="vam txtbar"/>
+				
+				<a href="/global/sitemap.asp"><img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_footer_sitemap.gif" alt="사이트맵" class="vam"/></a>
+				
+				<p style="margin:5px;"></p>
+				<img src="http://s.nx.com/s2/game/lod/lod2007/image/template/txt_copyright.gif" class="vam"/>
+			</td>
+		</tr>
+		</table>
+		</div>
+	</td>
+	<td></td>
+</tr>
+<!-- Footer End-->
+</table>
+</div>
+
+<script type="text/javascript">
+var browser = navigator.appName.charAt(0);
+function actionHide() {
+		var obj_all_character = document.getElementById("all_character");
+		if(obj_all_character!=null && obj_all_character.style.display=="block") obj_all_character.style.display = "none";
+}
+if(browser=="M") {
+	document.body.onclick=function() {
+	  if(event.srcElement.id!="character") actionHide();
+	}
+}else{
+	function hide(e) {
+		if(e.target.id!="character") actionHide();
+    } 
+	var el = document.body;
+    el.addEventListener("click", hide, false); 
+}
+</script>
+<script type="text/javascript" src="/lib/js/common/GnxMKDPlus.js"></script>
+<script type="text/javascript" src="http://s.nx.com/s1/global/ngb_bodyend.js"></script>
+</body>
+</html>

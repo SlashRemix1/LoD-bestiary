@@ -4,15 +4,30 @@ Fields were **merged by Korean monster name** from separate archival sources.
 
 ## 1. Name / location / level / description — lod-mind (2003)
 
-Fan site mirrored at `home.megapass.co.kr/~dungeons/lod/` via Wayback (EUC-KR). Use the Habitat tab for readable UTF-8.
+Fan site mirrored at `home.megapass.co.kr/~dungeons/lod/` via Wayback (EUC-KR). Use the Habitat tab for readable UTF-8. When the official list has the same monster, its level and description replace the lod-mind text.
 
-## 2. HP (체력) — darkstory.net Monster pages (2002–2003)
+## 2. HP and EXP — official Nexon monster list only
 
-Index: https://web.archive.org/web/20021217010147id_/http://darkstory.net/monster.html
+Darkstory.net numbers are **not used**.
 
-## 3. EXP — not available (KR LoD only)
+## 3. Official Nexon monster list (where archived)
 
-EXP columns are **blank**. Rejected sources:
+The dungeon pages (for example `http://lod.nexon.com/game_info/dungeon/dungeon9.asp`) framed `game_info/monster/list.asp?category=N`. Wayback still has these iframe documents:
+
+| Category | Area | Pages saved |
+|---|---|---|
+| 1 | 우드랜드 | 1–2 |
+| 2 | 지하묘지 | 1 (later pages were not captured) |
+| 4 | 포테의숲 | 1 |
+| 8 | 죽음의마을 | 1 |
+
+Columns are level, **HP (A)**, **EXP (B)**, description. For a monster on these pages, that level, description, HP, and EXP replace every other source. An official “?” is stored as blank. Spelling variants (엔트/앤트, 팜펫/팜팻, 트랜트/트렌트, 블루엘리멘탈/블루엔리멘탈, 브라운 팜펫/팜팻) were merged onto the lod-mind name.
+
+Monsters outside those captured pages keep the lod-mind name, place, level, and description. Their HP and EXP are blank.
+
+Dungeon shells `dungeon1.asp`–`dungeon9.asp` (Wayback 2020–2025) are saved under `sources/official-iframes/dungeons/`. Their area text is on the Habitat tab. Monster tables for 서아벨 해안, 서뤼케시온 해안, 호러캐슬, 오피온 동굴, 노에스엔도르탑, 지하수로, and the other dungeon9 categories were **not** captured.
+
+Rejected sources:
 
 | Candidate | Why rejected |
 |---|---|
@@ -27,12 +42,36 @@ Still seeking: **Korean LoD** Sense Monster dumps, official 2005 guidebook Chapt
 | Lead | Notes |
 |---|---|
 | **Yuki** | Name suggested by user; no public index (Discord/homepage/GitHub pack) found under 유키/Yuki + 어둠의전설 |
-| Legacy (`darklegacy.online`) | Claims 본섭 balance; client via Discord after 1:1 inquiry — no public data files |
-| BOX / Origin / Black | Active KR free-server ads; Discord-gated; no published monster tables |
+| Legacy (`darklegacy.online` → often `darklegacy123.online`) | Claims 본섭 balance; **use `https://darklegacy.online/`** (not `/home` — 404). `darklegacy.co.kr` DNS dead. Discord via homepage 1:1 (public invites dead). |
+| Legacy drop table | `https://darklegacy.online/drop/` — map→monster→items only; **no EXP/HP/AC** |
+| Origin (`discord.gg/wVbQssd4XQ`, 오리진대피소) | Custom/season rates (자동사냥, 뉴비부스트); Discord-only; not classic EXP |
+| Highway / Maya / Miles | Promo-board ads; Discord/blog installs; no Sense dumps |
+| BOX / Black | Active KR free-server ads; Discord-gated; no published monster tables |
 | 2017 gamezone “구축법” | Describes a KR pack `db/` with `experience` / `abilityexp` (player level curves), not per-monster EXP |
+
+### Promo boards scanned for Sense / EXP dumps (ads only)
+
+Boards: oraksil.cc, freebene.com, uami6.net, linfree.net, todaycp.com, gamezone.live.
+
+| Find | Result |
+|---|---|
+| oraksil / freebene / linfree LoD posts | Server ads + Discord links only; no Sense tables |
+| Origin Google Sheet (`1e-ca3yFbpX-…`) | Newbie guide / hunting tips / cash shop — not monster EXP |
+| gamezone `어둠의전설 몬스터정보` ([306104](http://gamezone.live/board_vJGK77/306104)) | Pointer to official `game_info/dungeon/dungeon1.asp` (Wayback = no per-monster EXP) |
+| gamezone `몬스터 뷰어` ([14024008](http://gamezone.live/board_RoFI68/14024008)) | `hades.dat` sprite/animation viewer only; download login-gated |
+| gamezone howto “몬스터에 대해서” ([301823](http://gamezone.live/board_JggX25/301823)) | PS-dev board **403** without membership |
+| Official Sense posts (Nageling / S-solo / tip 7056) | Modern or quick-dungeon — already rejected for classic habitat EXP |
 
 No open GitHub/KR LoD emulator repo with compiled habitat monster EXP (적룡굴, 죽음의마을, etc.) has surfaced.
 
+**Still best path for classic EXP:** in-game Sense on a 1×/본섭-balance KR server (e.g. Legacy), 2005 guidebook Ch.5 scans, or a leaked classic pack monster table (not player `experience` curves).
+
 ## 4. Sprites
 
-darkstory.net `/Monster/*/*.gif` via Wayback CDX (54 GIFs).
+darkstory.net `/Monster/*/*.gif` via Wayback CDX (54 GIFs). A monster is given an image only when that file is in `images/`.
+
+Official `http://s.nx.com/.../mns*.gif` sprites were **not** captured by the Wayback Machine, and `s.nx.com` no longer resolves. Those images are skipped.
+
+## 5. Original iframes
+
+UTF-8 copies of the list documents live in `sources/official-iframes/` and are shown on the Official pages tab. The parent dungeon shells (`dungeon9.asp`, `dungeon1.asp`) are saved next to them. Broken `s.nx.com` images are removed when the archived page loads.
