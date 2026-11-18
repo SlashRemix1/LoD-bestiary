@@ -9,9 +9,9 @@ Live: https://slashremix1.github.io/LoD-bestiary/
 ## Contents
 
 - Bilingual EN/KO monster browser (habitat, HP, sprites)
-- **EXP blank** — quick-dungeon tip-board values removed; classic Sense/fixed EXP not yet recovered
+- **EXP** from Dark Ages Library classic solo-max tables (English LoD), habitat-matched — not quick-dungeon
 - `lod_bestiary_final.csv` / `.json`
-- `SOURCES.md` — provenance and rejected EXP candidates
+- `SOURCES.md` — provenance and caveats
 
 ## Enable GitHub Pages (one-time)
 

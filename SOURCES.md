@@ -1,6 +1,6 @@
 # Source links (name / HP / EXP)
 
-Fields were **merged by Korean monster name** from separate archival sources. No single classic page had name + HP + EXP together.
+Fields were **merged by Korean monster name** from separate archival sources. No single classic KR page had name + HP + EXP together.
 
 ## 1. Name / location / level / description — lod-mind (2003)
 
@@ -24,37 +24,34 @@ Wayback originals are encoded as **EUC-KR** with no charset header, so modern br
 
 Index: https://web.archive.org/web/20021217010147id_/http://darkstory.net/monster.html
 
-| Area | Wayback |
-|---|---|
-| 우드랜드 (`woodrand.html`) | https://web.archive.org/web/20021217021241id_/http://darkstory.net/Monster/woodrand.html |
-| 광산 (`kangsan.html`) | https://web.archive.org/web/20030103134445id_/http://darkstory.net/Monster/kangsan.html |
-| 죽음의마을 (`dead.html`) | https://web.archive.org/web/20030103134348id_/http://darkstory.net/Monster/dead.html |
-| 적룡굴 (`reddragon.html`) | https://web.archive.org/web/20021217010254id_/http://darkstory.net/Monster/reddragon.html |
-| 지하던전 (`jihad.html`) | https://web.archive.org/web/20030103134413id_/http://darkstory.net/Monster/jihad.html |
-| 포테의숲 (`pote.html`) | https://web.archive.org/web/20021217021406id_/http://darkstory.net/Monster/pote.html |
-| 해안 (`sea.html`) | https://web.archive.org/web/20021217021129id_/http://darkstory.net/Monster/sea.html |
-| 피에트 (`pet.html`) | https://web.archive.org/web/20030103134235id_/http://darkstory.net/Monster/pet.html |
-| 아벨 (`abel.html`) | https://web.archive.org/web/20030103134309id_/http://darkstory.net/Monster/abel.html |
-| 악마성 (`devil.html`) | https://web.archive.org/web/20021217021327id_/http://darkstory.net/Monster/devil.html |
-
 HP is usually a range (e.g. `6~8만`) or `?`.
 
-## 3. EXP — not available (quick-dungeon values removed)
+## 3. EXP — Dark Ages Library (English LoD), classic solo max
 
-**Removed from this bestiary.** Prior EXP came only from the modern Nexon tip board quick-dungeon table ([post 7056](https://lod.nexon.com/board/1493172227/7056)): HP/MP-bracket scaled, intentionally inflated, and not classic field EXP.
+**Dark Ages** is the English release of Legend of Darkness (어둠의전설). The fan **Dark Ages Library** published per-area bestiaries with **solo maximum EXP by floor** (not quick-dungeon, not HP/MP brackets).
 
-Searched and **not found** for the 134 habitat monsters:
+Index: http://www.geocities.ws/krippultest/tembeastiary.html
 
-| Candidate | Why rejected / missing |
+| KR habitat | DA Library page | Example |
+|---|---|---|
+| 우드랜드 | [East Woodlands](http://www.geocities.ws/krippultest/beastew.html) | Viper 100–340, Goblin Soldier 11,340–18,500 |
+| 지하던전 | [Mileth Crypt](http://www.geocities.ws/krippultest/beastmilethcrypt.html) | Mouse 100–320, Succubus 50,660–65,820 |
+| 광산 | [Kasmanian Mines](http://www.geocities.ws/krippultest/beastkasmine.html) | Grimlok 82,800–90,000, Draco 382,500 |
+| 아벨던전 | [Abel Dungeon](http://www.geocities.ws/krippultest/beastabelcrypt.html) | Dwarf 50,660–59,010 |
+| 피에트던전 | [Piet Dungeon](http://www.geocities.ws/krippultest/beastpietcrypt.html) | Frog 3,607–4,817, Gremlin 69,741–78,829 |
+
+Only **high-confidence name+habitat** matches were filled (~40 monsters). Left blank: 적룡굴, 죽음의마을, 해안던전, 수오미/포테의숲 (Porte Forest page missing from that mirror), and unmatched names.
+
+**Caveats:** Values are classic English-server solo max by floor. Korean live EXP (and modern Sense Monster readings) can differ. Group EXP is lower (site note: 2-person ≈80% of solo max).
+
+### Rejected / unavailable EXP sources
+
+| Candidate | Why not used |
 |---|---|
-| lod-mind / darkstory Wayback | Habitat + HP only; no EXP/AC columns |
-| lod-mind `exp.html` | Character HP/MP calculator, not monster EXP |
-| Tip 7056 퀵던전 | Inflated bracket EXP — removed |
-| [Nageling Sense Monster table](https://lod.nexon.com/Community/game/7822) | Endgame tower mobs only (billions EXP) |
-| [S-solo dungeon Sense EXP](https://lod.nexon.com/Community/game/7581) | Modern solo dungeon, different roster |
-| Community blogs / umawiki hunting guides | Hunting routes only; no per-monster fixed EXP |
-
-Classic LoD showed EXP via **Sense/Scan Monster** in-game. No archived Sense dump for Woodland / Mine / Death Town / etc. habitat lists has surfaced yet. EXP columns stay blank until a non-퀵던전 source is recovered.
+| Tip board [7056 퀵던전](https://lod.nexon.com/board/1493172227/7056) | Inflated HP/MP-bracket quick-dungeon EXP |
+| Nageling / S-solo Sense tables | Different modern content |
+| lod-mind / darkstory Wayback | No EXP columns |
+| Official 2005 guidebook *어둠의 전설* (Nexon, ISBN 9788989364535), Chapter 5 “Monster Date List” | Out of print; no public scan/PDF found yet |
 
 ## 4. Sprites
 
