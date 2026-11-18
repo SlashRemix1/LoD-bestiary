@@ -4,15 +4,13 @@ Fields were **merged by Korean monster name** from separate archival sources.
 
 ## 1. Name / location / level / description — lod-mind (2003)
 
-Fan site mirrored at `home.megapass.co.kr/~dungeons/lod/` via Wayback (EUC-KR). Use the Habitat tab for readable UTF-8.
+Fan site mirrored at `home.megapass.co.kr/~dungeons/lod/` via Wayback (EUC-KR). Use the Habitat tab for readable UTF-8. When the official list has the same monster, its level and description replace the lod-mind text.
 
-## 2. HP (체력) — darkstory.net Monster pages (2002–2003), unless section 3 applies
+## 2. HP and EXP — official Nexon monster list only
 
-Index: https://web.archive.org/web/20021217010147id_/http://darkstory.net/monster.html
+Darkstory.net numbers are **not used**.
 
-Where an official list page was archived, that HP replaces the darkstory number.
-
-## 3. HP and EXP — official Nexon monster list (where archived)
+## 3. Official Nexon monster list (where archived)
 
 The dungeon pages (for example `http://lod.nexon.com/game_info/dungeon/dungeon9.asp`) framed `game_info/monster/list.asp?category=N`. Wayback still has these iframe documents:
 
@@ -23,9 +21,11 @@ The dungeon pages (for example `http://lod.nexon.com/game_info/dungeon/dungeon9.
 | 4 | 포테의숲 | 1 |
 | 8 | 죽음의마을 | 1 |
 
-Columns are level, **HP (A)**, **EXP (B)**, description. Those numbers replace darkstory HP for the same monster. Spelling variants on the official list (엔트/앤트, 팜펫/팜팻, 트랜트/트렌트, 블루엘리멘탈/블루엔리멘탈) were merged onto the lod-mind name instead of added twice. 니에 and 나이트메어 were only on the official list, so they were added.
+Columns are level, **HP (A)**, **EXP (B)**, description. For a monster on these pages, that level, description, HP, and EXP replace every other source. An official “?” is stored as blank. Spelling variants (엔트/앤트, 팜펫/팜팻, 트랜트/트렌트, 블루엘리멘탈/블루엔리멘탈, 브라운 팜펫/팜팻) were merged onto the lod-mind name.
 
-Monsters outside those captured pages keep darkstory HP when it existed. Their EXP stays blank.
+Monsters outside those captured pages keep the lod-mind name, place, level, and description. Their HP and EXP are blank.
+
+Dungeon shells `dungeon1.asp`–`dungeon9.asp` (Wayback 2020–2025) are saved under `sources/official-iframes/dungeons/`. Their area text is on the Habitat tab. Monster tables for 서아벨 해안, 서뤼케시온 해안, 호러캐슬, 오피온 동굴, 노에스엔도르탑, 지하수로, and the other dungeon9 categories were **not** captured.
 
 Rejected sources:
 

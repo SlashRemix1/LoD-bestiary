@@ -167,6 +167,20 @@ main {
 .panel { display: none; animation: rise 320ms ease-out both; }
 .panel.active { display: block; }
 
+.area-blurb {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.area-blurb h2 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+.area-blurb p { margin: 0; }
+
 .official-frame {
   width: 100%;
   height: 780px;

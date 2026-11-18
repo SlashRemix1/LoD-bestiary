@@ -11,6 +11,7 @@
   const count = $("#count");
   const habitatTabs = $("#habitat-tabs");
   const habitatBody = $("#habitat-body");
+  const habitatBlurb = $("#habitat-blurb");
   const sprites = $("#sprites");
   const pageTabs = $("#page-tabs");
   const officialFrame = $("#official-frame");
@@ -144,6 +145,30 @@
   function renderHabitat() {
     const h = data.habitats.find((x) => x.location === activeHabitat) || data.habitats[0];
     if (!h) return;
+    const blurbs = (data.officialAreas || []).filter((a) => a.location === h.location);
+    if (habitatBlurb) {
+      habitatBlurb.innerHTML = blurbs
+        .map(
+          (a) => `<article class="area-blurb">
+            <h2>${bilingual(a.title_en, a.title_ko)}</h2>
+            <p>${bilingual(a.text_en, a.text_ko)}</p>
+          </article>`,
+        )
+        .join("");
+    }
+    const other = document.querySelector("#other-areas");
+    if (other && !other.dataset.ready) {
+      other.dataset.ready = "1";
+      other.innerHTML = (data.officialAreas || [])
+        .filter((a) => !a.location)
+        .map(
+          (a) => `<article class="area-blurb">
+            <h2>${bilingual(a.title_en, a.title_ko)}</h2>
+            <p>${bilingual(a.text_en, a.text_ko)}</p>
+          </article>`,
+        )
+        .join("");
+    }
     habitatBody.innerHTML = h.monsters
       .map((row) => {
         const name = row.name ?? row[0];

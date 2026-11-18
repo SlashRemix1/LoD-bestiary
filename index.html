@@ -17,14 +17,12 @@
     <p class="brand">어둠의전설 · Legend of Darkness</p>
     <h1>Recovered Bestiary <span class="h1-ko">복원 몬스터 도감</span></h1>
     <p class="lede">
-      Habitat from 2002–2003 Korean fan archives.
-      HP and EXP come from the official Nexon monster lists where those pages were archived.
-      Sprites are the darkstory GIFs Wayback saved. Official Nexon images were not archived, so those are left blank.
+      Level, description, HP, and EXP come from the official Nexon monster lists wherever those pages were archived.
+      Darkstory numbers are not used. Areas without an archived list have blank HP and EXP.
     </p>
     <p class="lede ko-lede">
-      서식지는 2002–2003 한국 팬사이트 복원입니다.
-      체력·경험치는 웨이백에 남은 공식 넥슨 몬스터 목록에서 가져왔습니다.
-      이미지는 웨이백에 남은 darkstory GIF만 표시하고, 공식 이미지는 보존되지 않아 비워 둡니다.
+      레벨·설명·체력·경험치는 웨이백에 남은 공식 넥슨 몬스터 목록을 씁니다.
+      darkstory 수치는 쓰지 않습니다. 목록이 없는 지역은 체력과 경험치를 비워 둡니다.
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="#bestiary">Browse monsters · 몬스터 보기</a>
@@ -73,6 +71,7 @@
       <div class="toolbar">
         <div id="habitat-tabs" class="pill-row"></div>
       </div>
+      <div id="habitat-blurb"></div>
       <div class="table-wrap">
         <table>
           <thead>
@@ -81,11 +80,12 @@
           <tbody id="habitat-body"></tbody>
         </table>
       </div>
-      <p class="fine">Decoded UTF-8 from lod-mind EUC-KR pages (Wayback 2003). Raw archive links often look like gibberish in modern browsers. / lod-mind EUC-KR 페이지를 UTF-8로 복원했습니다.</p>
+      <div id="other-areas"></div>
+      <p class="fine">Where an official Nexon list exists, its level and description replace the lod-mind text. Other rows stay lod-mind (2003). Darkstory stats are not used. Horror Castle and Noes Endor Tower have official area text, but their monster tables were not archived.</p>
     </section>
 
     <section id="panel-sprites" class="panel">
-      <p class="fine">54 GIFs archived under darkstory.net/Monster/* — HTML pages cited ~157 sprites; the rest were never captured. / 웨이백에 남은 스프라이트 54개 (HTML에는 약 157개 언급).</p>
+      <p class="fine">Official Nexon sprites were not archived, so they are omitted. The GIFs shown here are the only monster pictures Wayback saved, from darkstory.net. They are pictures only. Stats on the cards are not from darkstory.</p>
       <div id="sprites" class="sprite-grid"></div>
     </section>
 
@@ -94,7 +94,7 @@
       <p class="fine ko-lede">던전 페이지가 iframe으로 불러오던 공식 몬스터 목록입니다. <code>s.nx.com</code> 이미지는 웨이백에 없어 빠뜨렸습니다.</p>
       <div id="page-tabs" class="pill-row"></div>
       <iframe id="official-frame" class="official-frame" title="Official monster list"></iframe>
-      <p class="fine">Parent shells, also archived: <a href="sources/official-iframes/dungeon9_crypt_shell.html">dungeon9.asp (지하묘지)</a> · <a href="sources/official-iframes/dungeon_woodland_shell_dungeon1.html">dungeon1.asp (우드랜드)</a> · <a href="sources/official-iframes/README.md">iframe index</a></p>
+      <p class="fine">Dungeon shells, 2024–2025 Wayback copies: <a href="sources/official-iframes/dungeons/dungeon1.html">1 우드랜드</a> · <a href="sources/official-iframes/dungeons/dungeon2.html">2 포테의 숲</a> · <a href="sources/official-iframes/dungeons/dungeon3.html">3 서아벨 해안</a> · <a href="sources/official-iframes/dungeons/dungeon4.html">4 서뤼케시온 해안</a> · <a href="sources/official-iframes/dungeons/dungeon5.html">5 죽음의 마을</a> · <a href="sources/official-iframes/dungeons/dungeon6.html">6 호러캐슬</a> · <a href="sources/official-iframes/dungeons/dungeon7.html">7 오피온 동굴</a> · <a href="sources/official-iframes/dungeons/dungeon8.html">8 노에스엔도르탑</a> · <a href="sources/official-iframes/dungeons/dungeon9.html">9 지하묘지</a></p>
     </section>
 
     <section id="panel-sources" class="panel">
@@ -104,9 +104,7 @@
       </article>
       <article class="source-card">
         <h2>HP and EXP</h2>
-        <p>Official Nexon <code>game_info/monster/list.asp</code> iframe pages via Wayback, for the categories that were captured (우드랜드, 지하묘지, 포테의숲, 죽음의마을). Column A is HP and column B is EXP. Other areas still use darkstory HP when a page was never archived, and their EXP stays blank.</p>
-        <p>Quick-dungeon and Dark Ages tables stay excluded.</p>
-        <p><a href="https://web.archive.org/web/20021217010147/http://darkstory.net/monster.html" target="_blank" rel="noopener">darkstory monster index</a></p>
+        <p>Official Nexon <code>game_info/monster/list.asp</code> only. Wayback captured 우드랜드 (2 pages), 지하묘지, 포테의숲, and 죽음의마을. Column A is HP and column B is EXP. A official “?” is left blank. Every other area’s HP and EXP are blank. Darkstory, quick-dungeon, and Dark Ages numbers are not used.</p>
       </article>
       <article class="source-card">
         <h2>Sprites</h2>
