@@ -1,6 +1,13 @@
 (() => {
   const data = window.LOD_DATA;
   if (!data) return;
+  const unnamed = Array.isArray(window.LOD_UNNAMED) ? window.LOD_UNNAMED : [];
+  if (unnamed.length) {
+    data.monsters = data.monsters.concat(unnamed);
+    data.stats.unnamed = unnamed.length;
+    data.stats.total = data.monsters.length;
+    data.stats.image = data.monsters.filter((m) => m.image).length;
+  }
 
   const $ = (sel) => document.querySelector(sel);
   const statsEl = $("#stats");
@@ -16,15 +23,21 @@
   const pageTabs = $("#page-tabs");
   const officialFrame = $("#official-frame");
 
+  const habitatOrder = (data.habitats || []).map((h) => h.location);
   const locations = [
     { ko: "All", en: "All" },
     ...Array.from(new Set(data.monsters.map((m) => m.location)))
-      .sort()
+      .sort((a, b) => zoneRank(a) - zoneRank(b) || a.localeCompare(b, "ko"))
       .map((ko) => ({
         ko,
         en: data.monsters.find((m) => m.location === ko)?.location_en || ko,
       })),
   ];
+  function zoneRank(name) {
+    if (name === "Unnamed") return 10_000;
+    const i = habitatOrder.indexOf(name);
+    return i === -1 ? 5_000 : i;
+  }
   loc.innerHTML = locations
     .map(
       (l) =>
@@ -40,6 +53,7 @@
     ["With EXP / 경험치", data.stats.exp],
     ["HP + EXP", data.stats.both],
     ["With image / 이미지", data.stats.image],
+    ["Unnamed sprites / 이름 없음", data.stats.unnamed || 0],
     ["Sprites / 스프라이트", data.stats.sprites],
   ]
     .map(
@@ -90,35 +104,86 @@
       m.hp_en,
       m.exp,
       m.exp_en,
+      m.sprite,
+      m.source,
     ]
       .join(" ")
       .toLowerCase();
     return blob.includes(query);
   }
 
+  const pageSize = 36;
+  const zonePage = new Map();
+
+  function levelValue(m) {
+    const n = Number(m.level);
+    return Number.isFinite(n) && m.level !== "" ? n : 9999;
+  }
+
+  function spriteValue(m) {
+    const n = Number(m.sprite);
+    return Number.isFinite(n) ? n : 999999;
+  }
+
+  function cardHtml(m) {
+    const thumb = m.image
+      ? `<img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.name_en || m.name)}" loading="lazy" />`
+      : `<span class="empty">no image<br>이미지 없음</span>`;
+    const chips = [];
+    if (m.sprite) chips.push(`<span class="chip">Sprite ${escapeHtml(m.sprite)}</span>`);
+    if (m.hp) chips.push(`<span class="chip hp">HP ${escapeHtml(m.hp)}</span>`);
+    if (m.exp) chips.push(`<span class="chip exp">EXP ${escapeHtml(m.exp)}</span>`);
+    if (!m.unnamed && !m.hp && !m.exp) chips.push(`<span class="chip">no official HP/EXP · 공식 수치 없음</span>`);
+    const extra = m.source ? ` · ${escapeHtml(m.source)}` : "";
+    return `<article class="card">
+      <div class="thumb">${thumb}</div>
+      <div>
+        <h3>${bilingual(m.name_en, m.name)}</h3>
+        <div class="meta">${bilingual(m.location_en, m.location)}${
+          m.level ? ` · Lv ${escapeHtml(m.level)}` : ""
+        }${extra}</div>
+        <p class="desc">${bilingual(m.description_en, m.description)}</p>
+        <div class="chips">${chips.join("")}</div>
+      </div>
+    </article>`;
+  }
+
   function renderBestiary() {
     const list = data.monsters.filter(matches);
     count.textContent = `${list.length} shown / ${list.length}마리`;
-    grid.innerHTML = list
-      .map((m) => {
-        const thumb = m.image
-          ? `<img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.name_en || m.name)}" loading="lazy" />`
-          : `<span class="empty">no image<br>이미지 없음</span>`;
-        const chips = [];
-        if (m.hp) chips.push(`<span class="chip hp">HP ${escapeHtml(m.hp)}</span>`);
-        if (m.exp) chips.push(`<span class="chip exp">EXP ${escapeHtml(m.exp)}</span>`);
-        if (!m.hp && !m.exp) chips.push(`<span class="chip">no official HP/EXP · 공식 수치 없음</span>`);
-        return `<article class="card">
-          <div class="thumb">${thumb}</div>
-          <div>
-            <h3>${bilingual(m.name_en, m.name)}</h3>
-            <div class="meta">${bilingual(m.location_en, m.location)}${
-              m.level ? ` · Lv ${escapeHtml(m.level)}` : ""
-            }</div>
-            <p class="desc">${bilingual(m.description_en, m.description)}</p>
-            <div class="chips">${chips.join("")}</div>
-          </div>
-        </article>`;
+    const groups = new Map();
+    for (const m of list) {
+      if (!groups.has(m.location)) groups.set(m.location, []);
+      groups.get(m.location).push(m);
+    }
+    const zones = [...groups.keys()].sort((a, b) => zoneRank(a) - zoneRank(b) || a.localeCompare(b, "ko"));
+    grid.innerHTML = zones
+      .map((zone) => {
+        const rows = groups.get(zone).slice().sort((a, b) => {
+          const byLevel = levelValue(a) - levelValue(b);
+          if (byLevel) return byLevel;
+          const bySprite = spriteValue(a) - spriteValue(b);
+          if (bySprite) return bySprite;
+          return String(a.name).localeCompare(String(b.name), "ko");
+        });
+        const pages = Math.max(1, Math.ceil(rows.length / pageSize));
+        const page = Math.min(zonePage.get(zone) || 0, pages - 1);
+        zonePage.set(zone, page);
+        const slice = rows.slice(page * pageSize, (page + 1) * pageSize);
+        const sample = rows[0];
+        const pager =
+          pages > 1
+            ? `<div class="pager">
+                <button type="button" data-zone="${escapeAttr(zone)}" data-page="${page - 1}" ${page === 0 ? "disabled" : ""}>Prev · 이전</button>
+                <span>${page + 1} / ${pages}</span>
+                <button type="button" data-zone="${escapeAttr(zone)}" data-page="${page + 1}" ${page === pages - 1 ? "disabled" : ""}>Next · 다음</button>
+              </div>`
+            : "";
+        return `<section class="zone" data-zone-section="${escapeAttr(zone)}">
+          <h2>${bilingual(sample.location_en, zone)} <span>${rows.length}</span></h2>
+          <div class="grid">${slice.map(cardHtml).join("")}</div>
+          ${pager}
+        </section>`;
       })
       .join("");
   }
@@ -203,7 +268,7 @@
 
   function renderSprites() {
     const fromMonsters = data.monsters
-      .filter((m) => m.image)
+      .filter((m) => m.image && !m.unnamed)
       .map((m) => ({
         name: m.name,
         name_en: m.name_en,
@@ -265,7 +330,20 @@
     renderHabitat();
   });
 
-  [q, loc, filt].forEach((el) => el.addEventListener("input", renderBestiary));
+  [q, loc, filt].forEach((el) =>
+    el.addEventListener("input", () => {
+      zonePage.clear();
+      renderBestiary();
+    }),
+  );
+  grid.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-zone][data-page]");
+    if (!btn || btn.disabled) return;
+    const zone = btn.dataset.zone;
+    zonePage.set(zone, Number(btn.dataset.page));
+    renderBestiary();
+    document.querySelector(`[data-zone-section="${CSS.escape(zone)}"]`)?.scrollIntoView({ block: "start" });
+  });
 
   renderBestiary();
   renderHabitatTabs();

@@ -90,6 +90,10 @@ darkstory.net `/Monster/*/*.gif` via Wayback CDX (54 GIFs). A monster is given a
 
 Official `http://s.nx.com/.../mns*.gif` sprites were **not** captured by the Wayback Machine, and `s.nx.com` no longer resolves. Those images are skipped.
 
-## 5. Original iframes
+## 5. Unnamed client sprites
+
+`SMonster` in Legend of Darkness names a sprite id. `hades.dat` `mns*.mpf` files and LoD R `monster000` / `monster001` sequences use the same id. An id that is not a clear `SMonster` sprite column is listed under **Unnamed**, with an idle GIF from `hades.dat` when that file exists. These rows have no habitat, HP, or EXP. Rows whose sprite column was missing or shifted stay out of the named-id set, so a few named monsters can also appear here until that row is repaired.
+
+## 6. Original iframes
 
 UTF-8 copies of the list documents live in `sources/official-iframes/` and are shown on the Official pages tab. The parent dungeon shells (`dungeon9.asp`, `dungeon1.asp`) are saved next to them. Broken `s.nx.com` images are removed when the archived page loads.

@@ -18,7 +18,7 @@
     <h1>Recovered Bestiary <span class="h1-ko">복원 몬스터 도감</span></h1>
     <p class="lede">
       Level, description, HP, and EXP come from the official Nexon monster lists wherever those pages were archived.
-      Darkstory numbers are not used. Areas without an archived list have blank HP and EXP.
+      Darkstory numbers are not used. Sprites in the client with no SMonster name are listed under Unnamed.
     </p>
     <p class="lede ko-lede">
       레벨·설명·체력·경험치는 웨이백에 남은 공식 넥슨 몬스터 목록을 씁니다.
@@ -64,7 +64,7 @@
         </label>
         <p class="count" id="count"></p>
       </div>
-      <div id="bestiary" class="grid"></div>
+      <div id="bestiary" class="zones"></div>
     </section>
 
     <section id="panel-habitat" class="panel">
@@ -124,6 +124,7 @@
   </footer>
 
   <script src="data.js"></script>
+  <script src="unnamed.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
