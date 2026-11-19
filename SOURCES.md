@@ -94,6 +94,19 @@ Official `http://s.nx.com/.../mns*.gif` sprites were **not** captured by the Way
 
 `SMonster` in Legend of Darkness names a sprite id. `hades.dat` `mns*.mpf` files and LoD R `monster000` / `monster001` sequences use the same id. An id that is not a clear `SMonster` sprite column is listed under **Unnamed**, with an idle GIF from `hades.dat` when that file exists. These rows have no habitat, HP, or EXP. Rows whose sprite column was missing or shifted stay out of the named-id set, so a few named monsters can also appear here until that row is repaired.
 
-## 6. Original iframes
+## 6. Client extras (not a drop table)
+
+The LoD client does **not** store per-monster loot tables. HP/EXP/AC and drop rates live on the server.
+
+What *is* in the client, and is now on matching Bestiary cards:
+
+- Defense element from `SMonster` descriptions (`방어속성 <수/토>`)
+- Promotion relics named in those descriptions (유물반지, 데스나이트의 투구, 데몬의턱뼈, 생명의 구슬, 드라코의눈)
+- Item names in `ItemDesc` / `Transforms` that start with the monster name plus `의` or a body-part suffix (비늘, 머리, 꼬리, …), and the recipes that consume them
+- Quest kill steps (`Quest*_KILLED*`) whose display name matches a monster
+
+These are links in client text, not confirmed drop rates.
+
+## 7. Original iframes
 
 UTF-8 copies of the list documents live in `sources/official-iframes/` and are shown on the Official pages tab. The parent dungeon shells (`dungeon9.asp`, `dungeon1.asp`) are saved next to them. Broken `s.nx.com` images are removed when the archived page loads.

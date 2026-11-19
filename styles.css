@@ -337,6 +337,19 @@ h3 .ko { font-size: 0.82em; }
 }
 .chip.hp { color: var(--ok); border-color: rgba(143, 191, 106, 0.35); }
 .chip.exp { color: var(--warn); border-color: rgba(217, 164, 65, 0.35); }
+.extra {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+.extra span {
+  display: block;
+  color: var(--accent2);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 
 .pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .pill {

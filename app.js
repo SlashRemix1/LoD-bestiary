@@ -8,6 +8,17 @@
     data.stats.total = data.monsters.length;
     data.stats.image = data.monsters.filter((m) => m.image).length;
   }
+  const extras = window.LOD_EXTRAS || {};
+  for (const m of data.monsters) {
+    const extra = extras[m.name];
+    if (!extra) continue;
+    m.element = extra.element || [];
+    m.parts = extra.parts || [];
+    m.crafts = extra.crafts || [];
+    m.quests = extra.quests || [];
+    m.client_notes = extra.notes || [];
+  }
+  data.stats.extras = Object.keys(extras).length;
 
   const $ = (sel) => document.querySelector(sel);
   const statsEl = $("#stats");
@@ -54,6 +65,7 @@
     ["HP + EXP", data.stats.both],
     ["With image / 이미지", data.stats.image],
     ["Unnamed sprites / 이름 없음", data.stats.unnamed || 0],
+    ["Client extras / 부가정보", data.stats.extras || 0],
     ["Sprites / 스프라이트", data.stats.sprites],
   ]
     .map(
@@ -91,6 +103,7 @@
     if (filter === "exp" && !m.exp) return false;
     if (filter === "both" && !(m.hp && m.exp)) return false;
     if (filter === "image" && !m.image) return false;
+    if (filter === "extras" && !(m.parts?.length || m.crafts?.length || m.quests?.length || m.element?.length || m.client_notes?.length)) return false;
     if (!query) return true;
     const blob = [
       m.name,
@@ -106,6 +119,10 @@
       m.exp_en,
       m.sprite,
       m.source,
+      ...(m.parts || []),
+      ...(m.crafts || []),
+      ...(m.quests || []),
+      ...(m.element || []),
     ]
       .join(" ")
       .toLowerCase();
@@ -133,8 +150,13 @@
     if (m.sprite) chips.push(`<span class="chip">Sprite ${escapeHtml(m.sprite)}</span>`);
     if (m.hp) chips.push(`<span class="chip hp">HP ${escapeHtml(m.hp)}</span>`);
     if (m.exp) chips.push(`<span class="chip exp">EXP ${escapeHtml(m.exp)}</span>`);
+    if (m.element?.length) chips.push(`<span class="chip">DEF ${escapeHtml(m.element.join("/"))}</span>`);
     if (!m.unnamed && !m.hp && !m.exp) chips.push(`<span class="chip">no official HP/EXP · 공식 수치 없음</span>`);
     const extra = m.source ? ` · ${escapeHtml(m.source)}` : "";
+    const lines = [];
+    if (m.parts?.length) lines.push(`<div class="extra"><span>Parts · 재료</span>${escapeHtml(m.parts.join(", "))}</div>`);
+    if (m.crafts?.length) lines.push(`<div class="extra"><span>Used in · 제작</span>${escapeHtml(m.crafts.join(", "))}</div>`);
+    if (m.quests?.length) lines.push(`<div class="extra"><span>Quests · 퀘스트</span>${escapeHtml(m.quests.join(" · "))}</div>`);
     return `<article class="card">
       <div class="thumb">${thumb}</div>
       <div>
@@ -144,6 +166,7 @@
         }${extra}</div>
         <p class="desc">${bilingual(m.description_en, m.description)}</p>
         <div class="chips">${chips.join("")}</div>
+        ${lines.join("")}
       </div>
     </article>`;
   }
