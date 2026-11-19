@@ -35,7 +35,20 @@ Rejected sources:
 | Dark Ages (EN) Library / private-server JSON | Different areas and balance from KR LoD (적룡굴, 죽음의마을, etc. missing or wrong) |
 | Nageling / S-solo Sense tables | Different modern content |
 
-Still seeking: **Korean LoD** Sense Monster dumps, official 2005 guidebook Chapter 5 scans, or **KR** private-server/emulator monster tables (not Dark Ages).
+Still seeking: **Korean LoD** Sense Monster dumps from classic habitats, scans of the printed books below, or a leaked classic pack monster table (not player `experience` curves, not private-server rates).
+
+### Printed official / licensed guides (no public scan)
+
+These are the only complete-looking monster books. Neither is sold new. No used copy was listed on Aladin or Kyobo when checked (Nov 2026).
+
+| Book | What it has | How to get it |
+|---|---|---|
+| **『어둠의 전설』 공식공략본** — 넥슨 편집부, 2005-02-20, ISBN **9788989364535**, 304pp | Chapter 5 is **Monster Date List** (plus Ch.4 items, Ch.6 maps). This is the official Nexon habitat HP/EXP book. | Kyobo/Aladin 품절·절판. No NLK hit under that ISBN/title. Watch 중고나라 / 번개장터 / Aladin used. |
+| **『DARK AGES 4: 어둠의 전설 완벽가이드북』** — 제우미디어, 2001-07-06, ISBN **9788985966184**, 384pp | Licensed 2001 fan/official guide. Ch.4.6 **몬스터 및 각 던전 분석** starts p.189 (through ~p.228). Pre-2005 content (승급, 적룡굴). | **국립중앙도서관** holds it: 청구기호 `691.15-1-35`, 디지털도서관 디지털자료실. A second catalog row has **원문보기** (협약도서관, 인쇄 시 과금). Publisher still exists: [제우미디어 Q&A](https://jeutest.jeumedia.com/board/qna/view/45) (2026 reprint ask) · `jeubooks@jeumedia.com`. Ad: [게임메카](https://www.gamemeca.com/view.php?gid=1635074). |
+
+A 2004 Nexon Q&A already said the then-current guidebook was sold out ([84621](https://lod.nexon.com/News/notice/84621)); the 2005 Nexon edition came a few months later.
+
+**Live official numbers:** Sense Monster on the 1× KR servers (셔스 / 세오). No public classic-habitat Sense table turned up. Quick-dungeon / S-solo / Nageling Sense posts are later content and stay rejected.
 
 ### KR private servers checked (no public monster-EXP dump yet)
 
@@ -82,7 +95,7 @@ Those posts were not imported. Blank HP/EXP stays blank.
 
 No open GitHub/KR LoD emulator repo with compiled habitat monster EXP (적룡굴, 죽음의마을, etc.) has surfaced.
 
-**Still best path for classic EXP:** in-game Sense on a 1×/본섭-balance KR server (e.g. Legacy), 2005 guidebook Ch.5 scans, or a leaked classic pack monster table (not player `experience` curves).
+**Still best path for classic EXP:** in-game Sense on official 셔스/세오 (or a verified 1× KR server), the 2005 Nexon guidebook Ch.5, or the 2001 Zeu Media guidebook’s dungeon/monster chapter at NLK.
 
 ## 4. Sprites
 
