@@ -66,6 +66,7 @@
     ["With image / 이미지", data.stats.image],
     ["Unnamed sprites / 이름 없음", data.stats.unnamed || 0],
     ["Client extras / 부가정보", data.stats.extras || 0],
+    ["Yuki server / 유키", (window.LOD_YUKI && window.LOD_YUKI.stats && window.LOD_YUKI.stats.total) || 0],
     ["Sprites / 스프라이트", data.stats.sprites],
   ]
     .map(
@@ -373,4 +374,130 @@
   renderHabitat();
   renderSprites();
   renderPages();
+  setupYuki();
+
+  function setupYuki() {
+    const yuki = window.LOD_YUKI;
+    const grid = $("#yuki-grid");
+    const q = $("#yuki-q");
+    const loc = $("#yuki-loc");
+    const filt = $("#yuki-filt");
+    const count = $("#yuki-count");
+    if (!yuki || !grid || !q || !loc || !filt || !count) return;
+    const list = yuki.monsters || [];
+    const zones = [...new Set(list.map((m) => m.zone))].sort((a, b) =>
+      a.localeCompare(b, "ko"),
+    );
+    loc.innerHTML =
+      `<option value="All">All / 전체</option>` +
+      zones
+        .map((z) => {
+          const en = list.find((m) => m.zone === z)?.zone_en || z;
+          return `<option value="${escapeAttr(z)}">${escapeHtml(`${en} / ${z}`)}</option>`;
+        })
+        .join("");
+    const pageSize = 36;
+    const zonePage = new Map();
+
+    function yukiMatches(m) {
+      if (loc.value !== "All" && m.zone !== loc.value) return false;
+      if (filt.value === "drops" && !(m.drops && m.drops.length)) return false;
+      if (filt.value === "image" && !m.image) return false;
+      const query = (q.value || "").trim().toLowerCase();
+      if (!query) return true;
+      const blob = [
+        m.name,
+        m.spawn_id,
+        m.zone,
+        m.zone_en,
+        m.hp,
+        m.exp,
+        m.sprite,
+        ...(m.drops || []).map((d) => d.item),
+        ...(m.maps || []).map((x) => x.map),
+      ]
+        .join(" ")
+        .toLowerCase();
+      return blob.includes(query);
+    }
+
+    function yukiCard(m) {
+      const thumb = m.image
+        ? `<img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.name)}" loading="lazy" />`
+        : `<span class="empty">no image<br>이미지 없음</span>`;
+      const chips = [];
+      if (m.hp) chips.push(`<span class="chip hp">HP ${escapeHtml(m.hp)}</span>`);
+      if (m.exp) chips.push(`<span class="chip exp">EXP ${escapeHtml(m.exp)}</span>`);
+      if (m.ac) chips.push(`<span class="chip">AC ${escapeHtml(m.ac)}</span>`);
+      if (m.atk_min || m.atk_max) chips.push(`<span class="chip">ATK ${escapeHtml(m.atk_min || "?")}–${escapeHtml(m.atk_max || "?")}</span>`);
+      if (m.gold) chips.push(`<span class="chip">Gold ${escapeHtml(m.gold)}${m.gold_rate ? ` (${escapeHtml(m.gold_rate)}%)` : ""}</span>`);
+      if (m.sprite) chips.push(`<span class="chip">Sprite ${escapeHtml(m.sprite)}</span>`);
+      const lines = [];
+      if (m.drops?.length) {
+        lines.push(`<div class="extra"><span>Drops · 드롭</span>${escapeHtml(m.drops.map((d) => `${d.item} ${d.rate}%`).join(" · "))}</div>`);
+      }
+      if (m.maps?.length) {
+        lines.push(`<div class="extra"><span>Maps · 맵</span>${escapeHtml(m.maps.map((x) => `${x.map} ×${x.count}`).join(" · "))}</div>`);
+      }
+      return `<article class="card">
+        <div class="thumb">${thumb}</div>
+        <div>
+          <h3>${escapeHtml(m.name)} <span class="ko">${escapeHtml(m.spawn_id)}</span></h3>
+          <div class="meta">${escapeHtml(m.zone_en)} / ${escapeHtml(m.zone)} · Yuki</div>
+          <div class="chips">${chips.join("")}</div>
+          ${lines.join("")}
+        </div>
+      </article>`;
+    }
+
+    function render() {
+      const shown = list.filter(yukiMatches);
+      count.textContent = `${shown.length} shown / ${shown.length}마리`;
+      const groups = new Map();
+      for (const m of shown) {
+        if (!groups.has(m.zone)) groups.set(m.zone, []);
+        groups.get(m.zone).push(m);
+      }
+      const keys = [...groups.keys()].sort((a, b) => a.localeCompare(b, "ko"));
+      grid.innerHTML = keys
+        .map((zone) => {
+          const rows = groups.get(zone);
+          const pages = Math.max(1, Math.ceil(rows.length / pageSize));
+          const page = Math.min(zonePage.get(zone) || 0, pages - 1);
+          zonePage.set(zone, page);
+          const slice = rows.slice(page * pageSize, (page + 1) * pageSize);
+          const sample = rows[0];
+          const pager =
+            pages > 1
+              ? `<div class="pager">
+                  <button type="button" data-yuki-zone="${escapeAttr(zone)}" data-page="${page - 1}" ${page === 0 ? "disabled" : ""}>Prev · 이전</button>
+                  <span>${page + 1} / ${pages}</span>
+                  <button type="button" data-yuki-zone="${escapeAttr(zone)}" data-page="${page + 1}" ${page === pages - 1 ? "disabled" : ""}>Next · 다음</button>
+                </div>`
+              : "";
+          return `<section class="zone" data-yuki-section="${escapeAttr(zone)}">
+            <h2>${escapeHtml(sample.zone_en)} / ${escapeHtml(zone)} <span>${rows.length}</span></h2>
+            <div class="grid">${slice.map(yukiCard).join("")}</div>
+            ${pager}
+          </section>`;
+        })
+        .join("");
+    }
+
+    [q, loc, filt].forEach((el) =>
+      el.addEventListener("input", () => {
+        zonePage.clear();
+        render();
+      }),
+    );
+    grid.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-yuki-zone][data-page]");
+      if (!btn || btn.disabled) return;
+      const zone = btn.dataset.yukiZone;
+      zonePage.set(zone, Number(btn.dataset.page));
+      render();
+      document.querySelector(`[data-yuki-section="${CSS.escape(zone)}"]`)?.scrollIntoView({ block: "start" });
+    });
+    render();
+  }
 })();
