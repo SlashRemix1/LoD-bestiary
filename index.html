@@ -19,7 +19,6 @@
     <p class="lede">
       Level, description, HP, and EXP come from the official Nexon monster lists wherever those pages were archived.
       Darkstory numbers are not used. Sprites in the client with no SMonster name are listed under Unnamed.
-      The Yuki server tab is a separate private-server pack and does not replace official HP/EXP.
     </p>
     <p class="lede ko-lede">
       레벨·설명·체력·경험치는 웨이백에 남은 공식 넥슨 몬스터 목록을 씁니다.
@@ -27,7 +26,6 @@
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="#bestiary">Browse monsters · 몬스터 보기</a>
-      <a class="btn" href="#panel-yuki">Yuki server · 유키</a>
       <a class="btn" href="#panel-sources">Sources · 출처</a>
       <a class="btn" href="lod_bestiary_final.csv">Download CSV</a>
     </div>
@@ -37,7 +35,6 @@
 
   <nav class="tabs" aria-label="Sections">
     <button type="button" class="tab active" data-panel="bestiary">Bestiary · 도감</button>
-    <button type="button" class="tab" data-panel="yuki">Yuki server · 유키</button>
     <button type="button" class="tab" data-panel="habitat">Habitat · 서식지</button>
     <button type="button" class="tab" data-panel="sprites">Sprites · 이미지</button>
     <button type="button" class="tab" data-panel="pages">Official pages · 공식 페이지</button>
@@ -69,31 +66,6 @@
         <p class="count" id="count"></p>
       </div>
       <div id="bestiary" class="zones"></div>
-    </section>
-
-    <section id="panel-yuki" class="panel">
-      <p class="fine">Yuki private-server <code>db/mob</code> pack. HP, EXP, AC, attack, gold, and drops are Yuki values, not the official Nexon lists on the Bestiary tab.</p>
-      <p class="fine ko-lede">유키 서버 몬스터 데이터입니다. 공식 넥슨 체력·경험치와는 별도입니다.</p>
-      <div class="toolbar">
-        <label class="search">
-          <span>Search · 검색</span>
-          <input id="yuki-q" type="search" placeholder="Name / 이름, zone, drop…" autocomplete="off" />
-        </label>
-        <label>
-          <span>Zone · 지역</span>
-          <select id="yuki-loc"></select>
-        </label>
-        <label>
-          <span>Filter · 필터</span>
-          <select id="yuki-filt">
-            <option value="all">All · 전체</option>
-            <option value="drops">Has drops · 드롭 있음</option>
-            <option value="image">Has image · 이미지 있음</option>
-          </select>
-        </label>
-        <p class="count" id="yuki-count"></p>
-      </div>
-      <div id="yuki-grid" class="zones"></div>
     </section>
 
     <section id="panel-habitat" class="panel">
@@ -141,10 +113,6 @@
         <p>darkstory.net <code>/Monster/*/*.gif</code> via Wayback CDX. 54 GIFs, linked by name where the file exists. Official <code>mns*.gif</code> files on <code>s.nx.com</code> were not archived and are skipped.</p>
       </article>
       <article class="source-card">
-        <h2>Yuki server</h2>
-        <p>Separate tab. Values come from the Desktop Yuki pack <code>db/mob</code> (HP, EXP, AC, attack, gold, drops, spawn maps). They are private-server numbers and do not replace official Nexon HP/EXP.</p>
-      </article>
-      <article class="source-card">
         <h2>Client extras</h2>
         <p>No loot table is in the client. Matching cards now show defense element, item parts / crafting recipes, and quest kill counts from <code>SMonster</code>, <code>ItemDesc</code>, <code>Transforms</code>, and <code>Quest</code> metafiles. Filter the bestiary with <strong>Has extras</strong>.</p>
       </article>
@@ -163,7 +131,6 @@
   <script src="data.js"></script>
   <script src="unnamed.js"></script>
   <script src="extras.js"></script>
-  <script src="yuki.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
